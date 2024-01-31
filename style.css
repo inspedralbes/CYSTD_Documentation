@@ -1,0 +1,88 @@
+/* IMPORTS */
+@font-face {
+    font-family: Gravity;
+    src: url(/Src/Fonts/gravity/Gravity-Light.otf);
+}
+
+/* END IMPORTS */
+
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    transition: all 0.2s;
+}
+
+*::selection {
+    background-color: #ff0000;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #313131;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #252525;
+}
+
+body,
+html {
+    font-family: Gravity, sans-serif;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Page {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.4fr 2fr;
+    gap: 0px 30px;
+}
+
+.Content {
+    grid-area: 1 / 2 / 2 / 3;
+    margin: 2% 0;
+}
+
+.NavBar {
+    background-color: #4e7294;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.NavBar ul {
+    padding: 0;
+    margin: 10% auto;
+    width: 80%;
+}
+
+.NavBar ul li {
+    margin: 10px auto;
+    padding: 20px;
+    list-style: none;
+    text-align: center;
+}
+
+.NavBar ul li:hover {
+    background-color: #3f5e7a;
+}
+
+.NavBar ul li a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
