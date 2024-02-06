@@ -192,7 +192,7 @@ p {
 }
 
 .section {
-  padding: 50px 0;
+  padding: 20px 0;
   position: relative;
   display: block;
 }
@@ -394,4 +394,28 @@ a:hover {
 
 #myBtn:hover {
   background-color: #404040;
+}
+
+.noSpace p,
+H4 {
+  margin: 0;
+  padding: 0;
+}
+
+.flexImg {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.marginR {
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+.noPadding {
+  padding: 0;
 }
