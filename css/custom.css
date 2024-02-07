@@ -1,6 +1,6 @@
 /* dark / light mode */
 html.dark body {
-  background: #222;
+  background: #222222;
   color: #888888;
 }
 
@@ -13,11 +13,19 @@ html.dark h6 {
   color: #dbdbdb;
 }
 
+html.dark h1 {
+  text-shadow: 0px 0px 6px #ffed4a9a;
+}
+
+html.dark h2 {
+  text-shadow: 0px 0px 4px #ffed4a79;
+}
+
 html.dark hr {
   border-color: #111;
 }
 
-html.dark .docs-sidebar .nav > li > a {
+html.dark .docs-sidebar .nav>li>a {
   color: #eee;
 }
 
@@ -61,7 +69,7 @@ html.dark .btn-primary:hover {
   border-color: #f16811;
 }
 
-html.dark .docs-sidebar .nav > li:not(.active) > a:hover {
+html.dark .docs-sidebar .nav>li:not(.active)>a:hover {
   color: #de7844;
   border-left-color: #de7844;
 }
@@ -139,17 +147,21 @@ html.dark .cystd {
 }
 
 @media (min-width: 992px) {
+
   .affix,
   .affix-bottom {
     width: 213px;
   }
+
   .affix {
     position: fixed;
     top: 20px;
   }
+
   .affix-bottom {
     position: absolute;
   }
+
   .affix .bs-docs-sidenav,
   .affix-bottom .bs-docs-sidenav {
     margin-top: 0;
@@ -158,6 +170,7 @@ html.dark .cystd {
 }
 
 @media (min-width: 1200px) {
+
   .affix,
   .affix-bottom {
     width: 263px;
@@ -168,13 +181,14 @@ html.dark .cystd {
 
 @media (min-width: 768px) {
   .docs-sidebar {
+    font-family: "Averia Sans Libre", sans-serif;
     padding-top: 20px;
     padding-left: 20px;
   }
 }
 
 /* all links */
-.docs-sidebar .nav > li > a {
+.docs-sidebar .nav>li>a {
   color: #111;
   border-left: 2px solid transparent;
   padding: 3px 20px;
@@ -183,41 +197,45 @@ html.dark .cystd {
 }
 
 /* nested links */
-.docs-sidebar .nav .nav > li > a {
+.docs-sidebar .nav .nav>li>a {
   padding-left: 40px;
   font-size: 14px;
 }
 
 /* hover links */
-.docs-sidebar .nav > li:not(.active) > a:hover {
-  color: #0e97ee;
+.docs-sidebar .nav>li:not(.active)>a:hover {
+  color: #996b43;
   text-decoration: none;
   background-color: transparent;
   border-left-width: 1px;
-  border-left-color: #0e97ee;
+  border-left-color: #996b43;
 }
+
 /* focus links */
-.docs-sidebar .nav > li > a:focus {
+.docs-sidebar .nav>li>a:focus {
   text-decoration: none;
   background-color: transparent;
 }
+
 /* active links */
-.docs-sidebar .nav > .active > a {
-  color: #0e97ee;
+.docs-sidebar .nav>.active>a {
+  color: #996b43;
   text-decoration: none;
   background-color: transparent;
-  border-left-color: #0e97ee;
+  border-left-color: #996b43;
 }
+
 /* all active links */
-.docs-sidebar .nav > .active > a,
-.docs-sidebar .nav > .active:hover > a,
-.docs-sidebar .nav > .active:focus > a {
+.docs-sidebar .nav>.active>a,
+.docs-sidebar .nav>.active:hover>a,
+.docs-sidebar .nav>.active:focus>a {
   font-weight: 700;
 }
+
 /* nested active links */
-.docs-sidebar .nav .nav > .active > a,
-.docs-sidebar .nav .nav > .active:hover > a,
-.docs-sidebar .nav .nav > .active:focus > a {
+.docs-sidebar .nav .nav>.active>a,
+.docs-sidebar .nav .nav>.active:hover>a,
+.docs-sidebar .nav .nav>.active:focus>a {
   font-weight: 500;
 }
 
@@ -226,10 +244,12 @@ html.dark .cystd {
     display: none;
     padding-bottom: 10px;
   }
-  .docs-sidebar .nav > .active > ul {
+
+  .docs-sidebar .nav>.active>ul {
     display: block;
   }
 }
+
 /*Syntax Highlighter : Sublime Theme */
 
 .syntaxhighlighter {
@@ -295,6 +315,7 @@ html.dark .cystd {
 .syntaxhighlighter .value {
   color: #96b5b4 !important;
 }
+
 /*css*/
 /* .syntaxhighlighter .css.plain,
 .syntaxhighlighter .css.plain a {
@@ -309,6 +330,7 @@ html.dark .cystd {
 .syntaxhighlighter .color3 a {
   color: #b48ead !important;
 }
+
 /*js*/
 
 .syntaxhighlighter .js.keyword {

@@ -15,17 +15,45 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css2?family=Averia+Sans+Libre&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400&display=swap);
+
 /* ----------------------------------------------------
     SKELETON    
 ------------------------------------------------------- */
 body {
-  background: #fff;
   color: #777777;
   font-size: 14px;
   line-height: 31px;
   letter-spacing: 0;
   font-weight: 400;
   padding: 0;
+}
+
+::selection {
+  background-color: #d09c74;
+  color: #363636;
+  padding: 10px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 h1,
@@ -41,14 +69,17 @@ h6 {
   font-weight: normal;
   line-height: 1.8;
   color: #242424;
+  font-family: "Averia Sans Libre", sans-serif;
 }
 
 h1 {
   font-size: 22px;
+  text-shadow: 0px 0px 2px #232323;
 }
 
 h2 {
   font-size: 20px;
+  text-shadow: 0px 0px 2px #232323;
 }
 
 h3 {
@@ -82,6 +113,7 @@ p {
   line-height: 26px;
   letter-spacing: 0;
   margin-top: 15px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 img.aligncenter {
@@ -101,6 +133,7 @@ ul {
 
 ol li ul li {
   padding-left: 20px;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 img.alignleft {
@@ -354,9 +387,9 @@ a:hover {
   border: 1px solid #545454;
 }
 
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
   background-color: #0e97ee;
   color: #fff;
 }
@@ -374,6 +407,7 @@ a:hover {
 .navbar-inverse li.btn a {
   color: #ffffff !important;
 }
+
 #myBtn {
   display: none;
   position: fixed;
@@ -385,15 +419,15 @@ a:hover {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: grey;
-  color: #ffff;
+  background-color: #996b43;
+  color: #f4f4f4;
   cursor: pointer;
   padding: 0px;
   border-radius: 50%;
 }
 
 #myBtn:hover {
-  background-color: #404040;
+  background-color: #805a39;
 }
 
 .noSpace p,
