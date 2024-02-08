@@ -448,10 +448,18 @@ H4 {
   margin-left: 2%;
 }
 
+.ULmarginLeft {
+  margin-left: 5%;
+}
+
 /* .marginLeft P {
   padding: 0;
 } */
 
 .noPadding {
   padding: 0;
+}
+
+.center {
+  margin: 0 auto;
 }
