@@ -4,242 +4,216 @@
 <!--[if IE 8]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
-  <!--<![endif]-->
+<!--<![endif]-->
 
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <meta name="keywords" content="" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <meta name="keywords" content="" />
 
-    <title>Item Name | Documentation by Author Name</title>
+  <title>CYSTD</title>
 
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="fonts/font-awesome-4.3.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/stroke.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/stroke.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="js/syntax-highlighter/styles/shCore.css"
-      media="all"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="js/syntax-highlighter/styles/shThemeRDark.css"
-      media="all"
-    />
+  <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all" />
+  <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all" />
 
-    <!-- CUSTOM -->
-    <link rel="stylesheet" type="text/css" href="css/custom.css" />
+  <!-- CUSTOM -->
+  <link rel="stylesheet" type="text/css" href="css/custom.css" />
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <i class="fa fa-chevron-up" aria-hidden="true"></i>
-    </button>
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+  </button>
 
-    <script>
-      var mybutton = document.getElementById("myBtn");
-      window.onscroll = function () {
-        scrollFunction();
-      };
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 1000 ||
-          document.documentElement.scrollTop > 1000
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
+  <script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 1000 ||
+        document.documentElement.scrollTop > 1000
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
       }
-      function topFunction() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
-      }
+    }
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      document.documentElement.scrollTo({ top: 0, behavior: "smooth" });
+    }
 
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelector("#mode").addEventListener("click", () => {
-          document.querySelector("html").classList.toggle("dark");
-        });
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelector("#mode").addEventListener("click", () => {
+        document.querySelector("html").classList.toggle("dark");
       });
-    </script>
+    });
+  </script>
 
-    <div id="wrapper">
-      <div id="mode">
-        <div class="dark">
-          <svg aria-hidden="true" viewBox="0 0 512 512">
-            <title>lightmode</title>
-            <path
-              fill="currentColor"
-              d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"
-            ></path>
-          </svg>
-        </div>
-        <div class="light">
-          <svg aria-hidden="true" viewBox="0 0 512 512">
-            <title>darkmode</title>
-            <path
-              fill="currentColor"
-              d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"
-            ></path>
-          </svg>
-        </div>
+  <div id="wrapper">
+    <div id="mode">
+      <div class="dark">
+        <svg aria-hidden="true" viewBox="0 0 512 512">
+          <title>lightmode</title>
+          <path fill="currentColor"
+            d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z">
+          </path>
+        </svg>
       </div>
+      <div class="light">
+        <svg aria-hidden="true" viewBox="0 0 512 512">
+          <title>darkmode</title>
+          <path fill="currentColor"
+            d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z">
+          </path>
+        </svg>
+      </div>
+    </div>
 
-      <div class="container">
-        <section id="top" class="section docs-heading">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="big-title text-center cystd">
-                <h1>CAN YOU SEE THE DARKNESS</h1>
-              </div>
-              <!-- end title -->
-            </div>
-            <!-- end 12 -->
-          </div>
-          <!-- end row -->
-
-          <hr />
-        </section>
-        <!-- end section -->
-
+    <div class="container">
+      <section id="top" class="section docs-heading">
         <div class="row">
-          <div class="col-md-3">
-            <nav
-              class="docs-sidebar"
-              data-spy="affix"
-              data-offset-top="300"
-              data-offset-bottom="200"
-              role="navigation"
-            >
-              <ul class="nav">
-                <!-- <li><a href="#line1">Produco MVP</a></li> -->
-                <li>
-                  <a href="#line1">Sistema de juego</a>
-                  <ul class="nav">
-                    <li><a href="#line1_1">Condición de victoria</a></li>
-                    <li><a href="#line1_2">Condición de derrota</a></li>
-                    <li><a href="#line1_3">Normas</a></li>
-                    <li><a href="#line1_4">Jugabilidad</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#line2">Narrativa</a>
-                  <ul class="nav">
-                    <li><a href="#line2_1">Resumen</a></li>
-                    <li><a href="#line2_2">Personajes</a></li>
-                    <li><a href="#line2_3">Cinemática introductoria</a></li>
-                  </ul>
-                </li>
-                <li><a href="#line3">Entorno y escenario</a></li>
-                <li>
-                  <a href="#line4">Mecánicas</a>
-                  <ul class="nav">
-                    <li><a href="#line4_1">Movimiento</a></li>
-                    <li><a href="#line4_2">Sprint</a></li>
-                    <li><a href="#line4_3">Agacharse</a></li>
-                    <li><a href="#line4_4">Saltar</a></li>
-                    <li><a href="#line4_5">Accionar/Interactuar</a></li>
-                    <li><a href="#line4_6">Oscuridad</a></li>
-                    <li><a href="#line4_7">Inventario/Menú</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#line5">Puzzles y desafíos</a>
-                  <ul class="nav">
-                    <li><a href="#line5_1">Llegada</a></li>
-                    <li><a href="#line5_2">Zona restauración</a></li>
-                    <li><a href="#line5_3">Zona Pulpo/Ranas</a></li>
-                    <li><a href="#line5_4">Zona Tiovivo</a></li>
-                    <li><a href="#line5_5">Interzona de arriba</a></li>
-                    <li><a href="#line5_6">Interzona de abajo</a></li>
-                    <li><a href="#line5_7">Zona de la noria</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#line6">Elementos de diseño</a>
-                  <ul class="nav">
-                    <li><a href="#line6_1">Explicación</a></li>
-                    <li><a href="#line6_2">Game Feel</a></li>
-                    <li><a href="#line6_3">Sensación de control</a></li>
-                    <li><a href="#line6_4">Práctica, ensayo y error</a></li>
-                    <li><a href="#line6_5">5 sentidos</a></li>
-                    <li><a href="#line6_6">Extensión de la identidad</a></li>
-                    <li>
-                      <a href="#line6_7">Interacción física dentro del juego</a>
-                    </li>
-                    <li>
-                      <a href="#line6_8">Accesibilidad</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#line7">Rutas de acción</a>
-                  <ul class="nav">
-                    <li><a href="#line7_1">Golden Path</a></li>
-                    <li><a href="#line7_2">Walkthrough</a></li>
-                  </ul>
-                </li>
-                <li><a href="#line8">Controles</a></li>
-                <li><a href="#line9">Monetización y márketing</a></li>
-                <li><a href="#line10">Biblia de arte</a></li>
-              </ul>
-            </nav>
+          <div class="col-md-12">
+            <div class="big-title text-center cystd">
+              <h1>CAN YOU SEE THE DARKNESS</h1>
+            </div>
+            <!-- end title -->
           </div>
-          <div class="col-md-9">
-            <section class="welcome">
-              <div class="row">
-                <div class="col-md-12 left-align">
-                  <h2 class="dark-text">
-                    Introducción
+          <!-- end 12 -->
+        </div>
+        <!-- end row -->
+
+        <hr />
+      </section>
+      <!-- end section -->
+
+      <div class="row">
+        <div class="col-md-3">
+          <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
+            <ul class="nav">
+              <!-- <li><a href="#line1">Produco MVP</a></li> -->
+              <li>
+                <a href="#line1">Sistema de juego</a>
+                <ul class="nav">
+                  <li><a href="#line1_1">Condición de victoria</a></li>
+                  <li><a href="#line1_2">Condición de derrota</a></li>
+                  <li><a href="#line1_3">Normas</a></li>
+                  <li><a href="#line1_4">Jugabilidad</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#line2">Narrativa</a>
+                <ul class="nav">
+                  <li><a href="#line2_1">Resumen</a></li>
+                  <li><a href="#line2_2">Personajes</a></li>
+                  <li><a href="#line2_3">Cinemática introductoria</a></li>
+                </ul>
+              </li>
+              <li><a href="#line3">Entorno y escenario</a></li>
+              <li>
+                <a href="#line4">Mecánicas</a>
+                <ul class="nav">
+                  <li><a href="#line4_1">Movimiento</a></li>
+                  <li><a href="#line4_2">Sprint</a></li>
+                  <li><a href="#line4_3">Agacharse</a></li>
+                  <li><a href="#line4_4">Saltar</a></li>
+                  <li><a href="#line4_5">Accionar/Interactuar</a></li>
+                  <li><a href="#line4_6">Oscuridad</a></li>
+                  <li><a href="#line4_7">Inventario/Menú</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#line5">Puzzles y desafíos</a>
+                <ul class="nav">
+                  <li><a href="#line5_1">Llegada</a></li>
+                  <li><a href="#line5_2">Zona restauración</a></li>
+                  <li><a href="#line5_3">Zona Pulpo/Ranas</a></li>
+                  <li><a href="#line5_4">Zona Tiovivo</a></li>
+                  <li><a href="#line5_5">Interzona de arriba</a></li>
+                  <li><a href="#line5_6">Interzona de abajo</a></li>
+                  <li><a href="#line5_7">Zona de la noria</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#line6">Elementos de diseño</a>
+                <ul class="nav">
+                  <li><a href="#line6_1">Explicación</a></li>
+                  <li><a href="#line6_2">Game Feel</a></li>
+                  <li><a href="#line6_3">Sensación de control</a></li>
+                  <li><a href="#line6_4">Práctica, ensayo y error</a></li>
+                  <li><a href="#line6_5">5 sentidos</a></li>
+                  <li><a href="#line6_6">Extensión de la identidad</a></li>
+                  <li>
+                    <a href="#line6_7">Interacción física dentro del juego</a>
+                  </li>
+                  <li>
+                    <a href="#line6_8">Accesibilidad</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#line7">Rutas de acción</a>
+                <ul class="nav">
+                  <li><a href="#line7_1">Golden Path</a></li>
+                  <li><a href="#line7_2">Walkthrough</a></li>
+                </ul>
+              </li>
+              <li><a href="#line8">Controles</a></li>
+              <li><a href="#line9">Monetización y márketing</a></li>
+              <li><a href="#line10">Biblia de arte</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-md-9">
+          <section class="welcome">
+            <div class="row">
+              <div class="col-md-12 left-align">
+                <h2 class="dark-text">
+                  Introducción
+                  <hr />
+                </h2>
+                <div class="row">
+                  <div class="col-md-12 full">
                     <hr />
-                  </h2>
-                  <div class="row">
-                    <div class="col-md-12 full">
-                      <hr />
-                      <div>
-                        <p>
-                          Can You See The Darkness es un videojuego de terror
-                          multijugador con una fecha de lanzamiento programada
-                          para 2024. En esta experiencia cooperativa los
-                          jugadores encarnarán a un grupo de jóvenes
-                          estadounidenses que quedan atrapados dentro de un
-                          parque de atracciones maldito donde ha desaparecido
-                          multitud de personas.
-                          <br />
-                          <br />
-                          Explorad el entorno juntos o separados, reunid
-                          elementos necesarios para escapar ya sea completando
-                          acertijos o usando las recreativas y evitad que la
-                          oscuridad que se cierne sobre el parque convierta a
-                          vuestro grupo en unas víctimas más de este lúgubre y
-                          terrorífico lugar.
-                        </p>
-                        <div
-                          style="
+                    <div>
+                      <p>
+                        Can You See The Darkness es un videojuego de terror
+                        multijugador con una fecha de lanzamiento programada
+                        para 2024. En esta experiencia cooperativa los
+                        jugadores encarnarán a un grupo de jóvenes
+                        estadounidenses que quedan atrapados dentro de un
+                        parque de atracciones maldito donde ha desaparecido
+                        multitud de personas.
+                        <br />
+                        <br />
+                        Explorad el entorno juntos o separados, reunid
+                        elementos necesarios para escapar ya sea completando
+                        acertijos o usando las recreativas y evitad que la
+                        oscuridad que se cierne sobre el parque convierta a
+                        vuestro grupo en unas víctimas más de este lúgubre y
+                        terrorífico lugar.
+                      </p>
+                      <div style="
                             position: relative;
                             width: 100%;
                             height: 0;
@@ -251,11 +225,8 @@
                             overflow: hidden;
                             border-radius: 8px;
                             will-change: transform;
-                          "
-                        >
-                          <iframe
-                            loading="lazy"
-                            style="
+                          ">
+                        <iframe loading="lazy" style="
                               position: absolute;
                               width: 100%;
                               height: 100%;
@@ -264,22 +235,19 @@
                               border: none;
                               padding: 0;
                               margin: 0;
-                            "
-                            src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF7eSCmw5Y&#x2F;view?embed"
-                            allowfullscreen="allowfullscreen"
-                            allow="fullscreen"
-                          >
-                          </iframe>
-                        </div>
+                            " src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF7eSCmw5Y&#x2F;view?embed"
+                          allowfullscreen="allowfullscreen" allow="fullscreen">
+                        </iframe>
                       </div>
                     </div>
                   </div>
-                  <!-- end row -->
                 </div>
+                <!-- end row -->
               </div>
-            </section>
+            </div>
+          </section>
 
-            <!-- <section id="line1" class="section">
+          <!-- <section id="line1" class="section">
               <div class="row">
                 <div class="col-md-12 left-align">
                   <h2 class="dark-text">
@@ -301,24 +269,24 @@
                                     </div>
                                 </div>
                             </div></pre> -->
-            <!-- </div>
+          <!-- </div>
               </div>
              </section>
             end section-->
 
-            <section id="line1" class="section">
-              <div class="row">
-                <div class="col-md-12 left-align">
-                  <h2 class="dark-text">
-                    Sistema de juego
-                    <hr />
-                  </h2>
-                </div>
-                <!-- end col -->
+          <section id="line1" class="section">
+            <div class="row">
+              <div class="col-md-12 left-align">
+                <h2 class="dark-text">
+                  Sistema de juego
+                  <hr />
+                </h2>
               </div>
-              <!-- end row -->
+              <!-- end col -->
+            </div>
+            <!-- end row -->
 
-              <!-- <div class="intro2 clearfix">
+            <!-- <div class="intro2 clearfix">
                 <p>
                   <i class="fa fa-wordpress"></i> Lorem the It is a long
                   established fact that a reader will be distracted.. <br />
@@ -329,1472 +297,1391 @@
 
               <hr /> -->
 
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line1_1">Condición de victoria</h4>
-                  <p>
-                    Para escapar con éxito, los jugadores deben recolectar todos
-                    los objetos clave y conseguir mover la noria para escpar del
-                    parque de atracciones.
-                  </p>
-                </div>
-                <!-- end col -->
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line1_1">Condición de victoria</h4>
+                <p>
+                  Para escapar con éxito, los jugadores deben recolectar todos
+                  los objetos clave y conseguir mover la noria para escpar del
+                  parque de atracciones.
+                </p>
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line1_2 ">Condición de derrota</h4>
-                  <p>
-                    Si no gestionan bien el generador para mantener la luz
-                    encendida, la oscuridad los consumirá y moriran todos.
-                  </p>
-                </div>
-                <!-- end col -->
+              <!-- end col -->
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line1_2 ">Condición de derrota</h4>
+                <p>
+                  Si no gestionan bien el generador para mantener la luz
+                  encendida, la oscuridad los consumirá y moriran todos.
+                </p>
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line1_3">Normas</h4>
-                  <p>
-                    Los jugadores se encuentran al inicio del parque, justo
-                    después de presenciar una cinemática que establece el
-                    escenario. En este punto, cuentan con movimientos básicos,
-                    claramente indicados en las mecánicas del juego,
-                    permitiéndoles explorar el entorno a su alrededor. La cámara
-                    es totalmente manipulable, brindándoles la libertad de
-                    examinar cada rincón y descubrir detalles cruciales para su
-                    progreso.
-                  </p>
-                </div>
-                <!-- end col -->
+              <!-- end col -->
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line1_3">Normas</h4>
+                <p>
+                  Los jugadores se encuentran al inicio del parque, justo
+                  después de presenciar una cinemática que establece el
+                  escenario. En este punto, cuentan con movimientos básicos,
+                  claramente indicados en las mecánicas del juego,
+                  permitiéndoles explorar el entorno a su alrededor. La cámara
+                  es totalmente manipulable, brindándoles la libertad de
+                  examinar cada rincón y descubrir detalles cruciales para su
+                  progreso.
+                </p>
               </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line1_4">Jugabilidad</h4>
-                  <p>
-                    Los jugadores se encuentran al inicio del parque, justo
-                    después de presenciar una cinemática que establece el
-                    escenario. Cuentan con movimientos básicos que permiten
-                    explorar el entorno a su alrededor. La cámara es totalmente
-                    manipulable, brindándoles la libertad de examinar cada
-                    rincón y descubrir detalles cruciales para su progreso.
-                  </p>
-                  <p>
-                    La organización es la manera mas efectiva para cumplir con
-                    las actividades asignadas en el tiempo establecido. Además,
-                    deben tener precaución y estar alerta ante el handicap de la
-                    oscuridad, el cual agrega un elemento de dificultad a la
-                    experiencia. La falta de visibilidad puede complicar las
-                    tareas y requerirá que los jugadores utilicen estrategias
-                    inteligentes para superar los obstáculos.
-                  </p>
-                  <p>
-                    Una vez que los jugadores hayan completado con éxito todas
-                    las actividades, recibirán objetos que les serán útiles para
-                    abrir un nuevo camino dentro del juego. La gestión efectiva
-                    de recursos y la resolución de desafíos en equipo serán
-                    fundamentales para el éxito en esta aventura dentro del
-                    parque.
-                  </p>
-                </div>
-                <!-- end col -->
+              <!-- end col -->
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line1_4">Jugabilidad</h4>
+                <p>
+                  Los jugadores se encuentran al inicio del parque, justo
+                  después de presenciar una cinemática que establece el
+                  escenario. Cuentan con movimientos básicos que permiten
+                  explorar el entorno a su alrededor. La cámara es totalmente
+                  manipulable, brindándoles la libertad de examinar cada
+                  rincón y descubrir detalles cruciales para su progreso.
+                </p>
+                <p>
+                  La organización es la manera mas efectiva para cumplir con
+                  las actividades asignadas en el tiempo establecido. Además,
+                  deben tener precaución y estar alerta ante el handicap de la
+                  oscuridad, el cual agrega un elemento de dificultad a la
+                  experiencia. La falta de visibilidad puede complicar las
+                  tareas y requerirá que los jugadores utilicen estrategias
+                  inteligentes para superar los obstáculos.
+                </p>
+                <p>
+                  Una vez que los jugadores hayan completado con éxito todas
+                  las actividades, recibirán objetos que les serán útiles para
+                  abrir un nuevo camino dentro del juego. La gestión efectiva
+                  de recursos y la resolución de desafíos en equipo serán
+                  fundamentales para el éxito en esta aventura dentro del
+                  parque.
+                </p>
               </div>
-            </section>
-            <!-- end section -->
+              <!-- end col -->
+            </div>
+          </section>
+          <!-- end section -->
 
-            <section id="line2" class="section">
-              <div class="row">
-                <div class="col-md-12 left-align">
-                  <h2 class="dark-text">
-                    Narrativa
-                    <hr />
-                  </h2>
+          <section id="line2" class="section">
+            <div class="row">
+              <div class="col-md-12 left-align">
+                <h2 class="dark-text">
+                  Narrativa
+                  <hr />
+                </h2>
+              </div>
+              <!-- end col -->
+              <div class="col-md-12">
+                <h4 id="line2_1">Resumen</h4>
+                <p>
+                  Cuatro jóvenes norteamericanos se encuentran celebrando el
+                  día de la independencia americana, el cuatro de julio. Como
+                  plan principal para esa misma noche querían encontrar un
+                  sitio en el que poder beber y vivir alguna aventura. Cameron
+                  insiste al grupo de amigos de ir a un parque abandonado que
+                  tiene fama de estar encantado. Muchos de sus compañeros
+                  deciden no ir por lo arriesgado que es, además de que hay
+                  muchos casos de desapariciones relacionadas con esa zona.
+                </p>
+                <p>
+                  En un inicio, Park Taeyang habría decidido ausentarse de
+                  explorar el parque ya que es muy asustadiza, pero al ver que
+                  su amiga Tiffany Carter iba a acompañar a Cameron Gallagher
+                  decidió unirse, tal y como pasaría con Jackson Danford. Toda
+                  la demás gente del grupo se echaron atrás, después de
+                  insistir a Cameron de lo que iba a suceder.
+                </p>
+                <p>
+                  Nada más entrar se encuentran con que algo les ha encerrado
+                  en el parque. Rápidamente encuentran un generador que llenan
+                  de gasolina para encender las luces sólamente para darse
+                  cuenta de que el parque en verdad era una enorme trampa.
+                </p>
+                <p>
+                  ¿Lograrán sobrevivir a la noche y escapar del lugar, o una
+                  tenebrosa y misteriosa fuerza les hará desaparecer como
+                  muchos otros antes?
+                </p>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="col-md-13">
+              <h4 id="line2_2">Personajes</h4>
+              <hr />
+              <div class="row flexImg">
+                <div class="col-md-5">
+                  <a href="/images/PJs/Jackson.png" data-rel="prettyPhoto"><img src="/images/PJs/Jackson.png"
+                      alt="Jackson Concept" class="img-responsive img-thumbnail" /></a>
                 </div>
-                <!-- end col -->
-                <div class="col-md-12">
-                  <h4 id="line2_1">Resumen</h4>
+
+                <div class="col-md-7">
+                  <div class="noSpace">
+                    <h4>Jackson Danforth</h4>
+                    <p><b>MBTI: </b>Defensor 🠖 ISFJ-A / ISFJ-T</p>
+                    <p><b>Edad: </b>19</p>
+                  </div>
                   <p>
-                    Cuatro jóvenes norteamericanos se encuentran celebrando el
-                    día de la independencia americana, el cuatro de julio. Como
-                    plan principal para esa misma noche querían encontrar un
-                    sitio en el que poder beber y vivir alguna aventura. Cameron
-                    insiste al grupo de amigos de ir a un parque abandonado que
-                    tiene fama de estar encantado. Muchos de sus compañeros
-                    deciden no ir por lo arriesgado que es, además de que hay
-                    muchos casos de desapariciones relacionadas con esa zona.
-                  </p>
-                  <p>
-                    En un inicio, Park Taeyang habría decidido ausentarse de
-                    explorar el parque ya que es muy asustadiza, pero al ver que
-                    su amiga Tiffany Carter iba a acompañar a Cameron Gallagher
-                    decidió unirse, tal y como pasaría con Jackson Danford. Toda
-                    la demás gente del grupo se echaron atrás, después de
-                    insistir a Cameron de lo que iba a suceder.
-                  </p>
-                  <p>
-                    Nada más entrar se encuentran con que algo les ha encerrado
-                    en el parque. Rápidamente encuentran un generador que llenan
-                    de gasolina para encender las luces sólamente para darse
-                    cuenta de que el parque en verdad era una enorme trampa.
-                  </p>
-                  <p>
-                    ¿Lograrán sobrevivir a la noche y escapar del lugar, o una
-                    tenebrosa y misteriosa fuerza les hará desaparecer como
-                    muchos otros antes?
+                    Apasionado de la batería y de la música, es el mejor amigo
+                    de Cameron desde que eran niños y siempre han estado
+                    juntos. Muy aplicado en los estudios desde temprana edad,
+                    con una personalidad relajada, pero queriendo divertirse
+                    siempre, su sueño es poder dedicarse a su gran hobby de
+                    manera profesional. Tiene un crush en Tiffany, aunque duda
+                    de si contárselo a su amigo Cameron, ya que él y ella son
+                    hermanastros.
                   </p>
                 </div>
                 <!-- end col -->
               </div>
               <!-- end row -->
-              <div class="col-md-13">
-                <h4 id="line2_2">Personajes</h4>
-                <hr />
-                <div class="row flexImg">
-                  <div class="col-md-5">
-                    <a href="/images/PJs/Jackson.png" data-rel="prettyPhoto"
-                      ><img
-                        src="/images/PJs/Jackson.png"
-                        alt="Jackson Concept"
-                        class="img-responsive img-thumbnail"
-                    /></a>
-                  </div>
 
-                  <div class="col-md-7">
-                    <div class="noSpace">
-                      <h4>Jackson Danforth</h4>
-                      <p><b>MBTI: </b>Defensor 🠖 ISFJ-A / ISFJ-T</p>
-                      <p><b>Edad: </b>19</p>
-                    </div>
-                    <p>
-                      Apasionado de la batería y de la música, es el mejor amigo
-                      de Cameron desde que eran niños y siempre han estado
-                      juntos. Muy aplicado en los estudios desde temprana edad,
-                      con una personalidad relajada, pero queriendo divertirse
-                      siempre, su sueño es poder dedicarse a su gran hobby de
-                      manera profesional. Tiene un crush en Tiffany, aunque duda
-                      de si contárselo a su amigo Cameron, ya que él y ella son
-                      hermanastros.
-                    </p>
-                  </div>
-                  <!-- end col -->
-                </div>
-                <!-- end row -->
+              <hr />
 
-                <hr />
-
-                <div class="row flexImg">
-                  <div class="col-md-5">
-                    <a href="images/PJs/Tiffany.png" data-rel="prettyPhoto"
-                      ><img
-                        src="images/PJs/Tiffany.png"
-                        alt=""
-                        class="img-responsive img-thumbnail"
-                    /></a>
-                  </div>
-
-                  <div class="col-md-7">
-                    <div class="noSpace">
-                      <h4>Tiffany Carter</h4>
-                      <p><b>MBTI: </b>Comandante 🠖 ENTJ-A / ENTJ-T</p>
-                      <p><b>Edad: </b>18</p>
-                    </div>
-                    <p>
-                      A Tiffany le gusta jugar a videojuegos desde pequeña
-                      gracias a su hermanastro Cameron, aunque lo esconde por
-                      miedo al que dirán de ella en el Instituto. Tiene mucha
-                      confianza en ella misma, lo que a veces hace que parezca
-                      muy creída, aunque siempre da la cara por sus amigos y por
-                      la gente que le importa. Es la primera en sobreproteger a
-                      Cameron en toda situación, aunque no pare de meterse en
-                      problemas.
-                    </p>
-                  </div>
-                  <!-- end col -->
-                </div>
-                <!-- end row -->
-
-                <hr />
-
-                <div class="row flexImg">
-                  <div class="col-md-5">
-                    <a href="images/PJs/Park.png" data-rel="prettyPhoto"
-                      ><img
-                        src="images/PJs/Park.png"
-                        alt=""
-                        class="img-responsive img-thumbnail"
-                    /></a>
-                  </div>
-
-                  <div class="col-md-7">
-                    <div class="noSpace">
-                      <h4>Park Taeyang “Yang”</h4>
-                      <p><b>MBTI: </b> Mediador 🠖 INFP-A / INFP-T</p>
-                      <p><b>Edad: </b>18</p>
-                    </div>
-                    <p>
-                      Yang desde pequeña le ha gustado bailar ballet y el arte,
-                      es una chica amable y tranquila aunque muy asustadiza. Es
-                      por eso que intenta evitar a toda costa cualquier
-                      situación peligrosa o arriesgada, aunque siempre acabe en
-                      líos por estar despistada con sus pensamientos. Idolatra a
-                      Tiffany aunque Cameron no le cae muy bien debido a que la
-                      lleva por el mal camino.
-                    </p>
-                  </div>
-                  <!-- end col -->
+              <div class="row flexImg">
+                <div class="col-md-5">
+                  <a href="images/PJs/Tiffany.png" data-rel="prettyPhoto"><img src="images/PJs/Tiffany.png" alt=""
+                      class="img-responsive img-thumbnail" /></a>
                 </div>
 
-                <hr />
+                <div class="col-md-7">
+                  <div class="noSpace">
+                    <h4>Tiffany Carter</h4>
+                    <p><b>MBTI: </b>Comandante 🠖 ENTJ-A / ENTJ-T</p>
+                    <p><b>Edad: </b>18</p>
+                  </div>
+                  <p>
+                    A Tiffany le gusta jugar a videojuegos desde pequeña
+                    gracias a su hermanastro Cameron, aunque lo esconde por
+                    miedo al que dirán de ella en el Instituto. Tiene mucha
+                    confianza en ella misma, lo que a veces hace que parezca
+                    muy creída, aunque siempre da la cara por sus amigos y por
+                    la gente que le importa. Es la primera en sobreproteger a
+                    Cameron en toda situación, aunque no pare de meterse en
+                    problemas.
+                  </p>
+                </div>
+                <!-- end col -->
+              </div>
+              <!-- end row -->
+
+              <hr />
+
+              <div class="row flexImg">
+                <div class="col-md-5">
+                  <a href="images/PJs/Park.png" data-rel="prettyPhoto"><img src="images/PJs/Park.png" alt=""
+                      class="img-responsive img-thumbnail" /></a>
+                </div>
+
+                <div class="col-md-7">
+                  <div class="noSpace">
+                    <h4>Park Taeyang “Yang”</h4>
+                    <p><b>MBTI: </b> Mediador 🠖 INFP-A / INFP-T</p>
+                    <p><b>Edad: </b>18</p>
+                  </div>
+                  <p>
+                    Yang desde pequeña le ha gustado bailar ballet y el arte,
+                    es una chica amable y tranquila aunque muy asustadiza. Es
+                    por eso que intenta evitar a toda costa cualquier
+                    situación peligrosa o arriesgada, aunque siempre acabe en
+                    líos por estar despistada con sus pensamientos. Idolatra a
+                    Tiffany aunque Cameron no le cae muy bien debido a que la
+                    lleva por el mal camino.
+                  </p>
+                </div>
+                <!-- end col -->
+              </div>
+
+              <hr />
+
+              <div class="row flexImg">
+                <div class="col-md-5">
+                  <a href="images/PJs/Cameron.png" data-rel="prettyPhoto"><img src="images/PJs/Cameron.png" alt=""
+                      class="img-responsive img-thumbnail" /></a>
+                </div>
+
+                <div class="col-md-7">
+                  <div class="noSpace">
+                    <h4>Cameron Gallagher “Cam”</h4>
+                    <p><b>MBTI: </b>Aventurero 🠖 ISFP-A / ISFP-T</p>
+                    <p><b>Edad: </b>20</p>
+                  </div>
+                  <p>
+                    Desordenado y bromista, aunque centrado en los momentos
+                    importantes, ha tenido una vida complicada, tuvo que
+                    repetir curso y ahí conoció a Jackson, quien le ayudó
+                    junto a su pasión por el básquet lo han ayudado en los
+                    tiempos difíciles. Le gusta explorar y muchas veces se
+                    mete en líos por ello, por lo que la gente que lo conoce
+                    decide mantenerse en raya. Adora a su hermanastra, aunque
+                    muchas veces tengan sus piques, y se suele juntar con su
+                    grupo porque le llama la atención Park Taeyang.
+                  </p>
+                </div>
+                <!-- end col -->
+              </div>
+              <hr />
+            </div>
+
+            <div class="col-md-12 cinemática">
+              <h4 id="line2_3">Cinemática intoductoria</h4>
+              <ul>
+                <li>
+                  - Plano detalle de suelo y pasan los personajes corriendo
+                </li>
+                <li>
+                  - Plano general del parque y de las espaldas de los
+                  personajes entrando
+                </li>
+                <li>
+                  - Contraplano entero ya dentro del parque y se cierran las
+                  puertas tras difuminar a los personajes
+                </li>
+                <li>
+                  - POV en primera persona de un personaje que mira de lado a
+                  lado y encuentra la caseta con el generador
+                </li>
+                <li>
+                  - Cameron agarra una botella de gasolina y la gasta en el
+                  generador
+                </li>
+                <li>- Plano general del parque recuperando la luz</li>
+                <li>
+                  - Tiffany encuentra las libretas clavadas en el muro
+                  informativo
+                </li>
+              </ul>
+              <hr />
+            </div>
+            <!-- end row -->
+          </section>
+          <!-- end section -->
+
+          <section id="line3" class="section">
+            <div class="row">
+              <div class="col-md-12 left-align">
+                <h2 class="dark-text">
+                  Entorno y escenario
+                  <hr />
+                </h2>
+              </div>
+              <div class="col-md-6">
+                <h4>Concept Art espacio Zona 1:</h4>
+
+                <a href="images/CYSTD_FutureMapConcept.png" data-rel="prettyPhoto"><img
+                    src="images/CYSTD_FutureMapConcept.png" alt="" class="img-responsive img-thumbnail" /></a>
+              </div>
+              <div class="col-md-6">
+                <h4>Whitebox zona 1:</h4>
+                <a href="/images/WHITEBOX.png" data-rel="prettyPhoto"><img src="/images/WHITEBOX.png" alt=""
+                    class="img-responsive img-thumbnail" /></a>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+
+            <!-- end row -->
+          </section>
+          <!-- end section -->
+
+          <section id="line4" class="section">
+            <div class="row">
+              <div class="col-md-12 left-align">
+                <h2 class="dark-text">
+                  Mecánicas
+                  <hr />
+                </h2>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line4_1">Movimiento</h4>
+                <p>
+                  Con todos los personajes controlables, el jugador es capaz
+                  de usar un movimiento en todas las direcciones. Es la
+                  mecánica base del juego y permite el desplazamiento entre
+                  los diferentes escenarios y fases. Se puede combinar con
+                  otras mecánicas como el Sprint, Agacharse o Saltar para
+                  conseguir resultados varios. Alrededor y por dentro del mapa
+                  se encontrarán obstáculos que detendrán el movimiento, unos
+                  removibles y otros no.
+                </p>
+              </div>
+              <div class="col-md-12">
+                <h4 id="line4_2">Sprint</h4>
+                <p>
+                  Como ampliación de la mecánica del movimiento existe el
+                  Sprint, acción que nos permite movernos a mayor velocidad.
+                  Siempre y cuando el jugador esté en movimiento podemos
+                  pulsar una tecla o botón para esprintar, pero nunca en
+                  viceversa. Esta mecánica consta de un límite de energía que
+                  se llena automáticamente con el tiempo. Dependiendo del
+                  nivel de oscuridad, la velocidad será mayor o menor.
+                </p>
+              </div>
+              <div class="col-md-12">
+                <h4 id="line4_3">Agacharse</h4>
+                <p>
+                  Siendo la contraparte del Sprint, al agacharse disminuimos
+                  nuestra velocidad a cambio de reducir nuestra altura. Esto
+                  permite al jugador acceder a lugares que no serían
+                  accesibles de otra forma, como pueden ser túneles, accesos
+                  derruidos, entre otros. Una vez agachados también
+                  recuperaremos el límite del sprint más rápidamente.
+                </p>
+              </div>
+              <div class="col-md-12">
+                <h4 id="line4_4">Saltar</h4>
+                <p>
+                  A veces el jugador se encontrará con obstáculos o distancias
+                  que no puede sortear ni corriendo ni agachándose. Estos
+                  puntos son diseñados para que el jugador pueda utilizar la
+                  mecánica de saltar. Al saltar nos desplazamos un poco hacia
+                  arriba, conservando el momentum que llevamos con antelación,
+                  lo que significa que si se esprinta el salto recorrerá más
+                  espacio. Saltar también comparte y gasta el límite impuesto
+                  por el Sprint.
+                </p>
+              </div>
+              <div class="col-md-12">
+                <h4 id="line4_5">Accionar/Interactuar</h4>
+                <p>
+                  El jugador es capaz de interactuar con algunos elementos del
+                  entorno, sean botones, palancas o retos. Por nombrar un
+                  ejemplo, la acción de interactuar se daría en caso de que el
+                  jugador tenga que empezar un minijuego de pinball mediante
+                  una máquina situada en el entorno, donde se pueden dar
+                  muchos resultados diferentes. En cambio, Accionar es una
+                  mecánica reservada a elementos de on/off, como botones,
+                  palancas u objetos coleccionables.
+                </p>
+              </div>
+              <div class="col-md-12">
+                <h4 id="line4_6">Oscuridad</h4>
+                <p>
+                  La Oscuridad es la segunda mecánica principal del juego y lo
+                  que nos habilita a la condición de derrota. Si el equipo no
+                  logra alcanzar los objetivos a tiempo perderá la partida.
+                  Todos los jugadores comparten un medidor, sea diegético o
+                  no, en el que poder informarse del punto en el que se
+                  encuentra el equipo. Esta mecánica avanza con el tiempo y el
+                  nivel de dificultad seleccionado cambiará la velocidad en la
+                  que avanza. Además, existe un generador localizado en cada
+                  nivel que permite a los jugadores reiniciar el contador de
+                  la oscuridad. Este generador necesita ser accionado por los
+                  jugadores y (se romperá en los X usos/necesitarán encontrar
+                  cierto objeto consumible para poder accionar).
+                </p>
+                <p class="noPadding">
+                  Cada porcentaje de Oscuridad hará sentir al jugador unos
+                  síntomas o efectos distintos. Además de la oscuridad en la
+                  pantalla de los jugadores:
+                </p>
+                <ul class="marginR">
+                  <li>- 90% 🠖 Empieza a oscurecerse</li>
+                  <li>- 80% 🠖 Aparece neblina “fría” por el mapa</li>
+                  <li>
+                    - 70% 🠖 Los personajes se notan asustados (respiración más
+                    fuerte)
+                  </li>
+                  <li>- 60% 🠖 Se oyen voces y risas</li>
+                  <li>- 50% 🠖 Se mueven cosas solas</li>
+                  <li>
+                    - 40% 🠖 Efectos post processing (Film grain, Chromatic
+                    Aberration…)
+                  </li>
+                  <li>
+                    - 30% 🠖 Se ven ojos en la oscuridad y los latidos del
+                    jugador.
+                  </li>
+                  <li>- 20% 🠖 Aparecen ilusiones por el mapa</li>
+                  <li>- 10% 🠖 No se puede esprintar</li>
+                  <li>- 0% 🠖 Game Over</li>
+                </ul>
+              </div>
+              <div class="col-md-12">
+                <h4 id="line4_7">Inventario/Menú</h4>
+                <p>
+                  Para tener en cuenta los objetivos y mejorar la
+                  organización, nada más empezar la partida, el equipo se
+                  encontrará con cuatro libretas clavadas en una pared con
+                  unos cuchillos. Estas libretas nos permiten ver qué
+                  deberemos hacer para ganar. También sirve como utensilio
+                  para ver qué objetos hemos cogido, y para consultar las
+                  opciones o salir del juego.
+                </p>
+              </div>
+            </div>
+            <!-- end row -->
+          </section>
+          <!-- end section -->
+
+          <section id="line5" class="section">
+            <div class="row">
+              <div class="col-md-12 left-align">
+                <h2 class="dark-text">
+                  Puzzles y desafíos
+                  <hr />
+                </h2>
+
+                <h4 id="line5_1">S1. Llegada</h4>
+                <p class="noPadding">
+                  Los jugadores aparecen en la zona inicial del juego, la
+                  entrada cerca de la caseta del conserje y un poste
+                  informativo
+                </p>
+                <div class="row">
+                  <div class="col-md-12 left-align marginLeft">
+                    <h5 class="noPadding">S1.1 Caseta</h5>
+                    <p>
+                      puerta abierta muy cercana a la entrada. Pueden entrar
+                      para investigar un poco la situación y la decoración,
+                      con pistas y mensajes. Habrá una puerta trasera que
+                      llevará a un pequeño patio con vallas altas en el que se
+                      encontrará un generador.
+                    </p>
+                    <h5 class="noPadding">S1.2 Libretas</h5>
+                    <p>
+                      En el poste informativo se encontrará plasmado el mapa
+                      del recinto y cuatro libretas clavadas, cada una con un
+                      cuchillo. Los jugadores son capaces de tomar cada uno su
+                      respectiva libreta para darse cuenta con un mensaje que
+                      con un botón podrán abrirla y ver sus objetivos, notas,
+                      objetos que lleva, etc. Se puede ignorar la libreta para
+                      dificultar el gameplay(?)/No se puede empezar hasta
+                      tomar cada uno su libreta.
+                    </p>
+                    <h5 class="noPadding">S1.3 Generador</h5>
+                    <p>
+                      Detrás de la caseta del conserje se encuentra un
+                      generador que brilla de un color especial. Ya sea porque
+                      los jugadores lo encuentran entrando por la caseta o
+                      dando la vuelta y observándolo a través de las vallas,
+                      se sentirán tentados de entrar a investigar lo que es
+                      eso. Al mirarlo de cerca, verán un mensaje que dice
+                      “Necesito gasolina para accionar el generador” en el
+                      cursor, en lugar del típico “Usa ‘E’ para accionar”, lo
+                      que llevará a los jugadores a volver en un futuro cuando
+                      encuentren un garrafón de gasolina. Transcurrido un
+                      tiempo ya habrán sufrido un poco los efectos de la
+                      oscuridad y habrán encontrado un garrafón, por lo que al
+                      emplearlo en el generador notarán que el nivel de
+                      oscuridad ha disminuido. Claramente, si alguien del
+                      grupo ya ha jugado al juego podrá explicarles a los
+                      demás el funcionamiento.
+                    </p>
+                    <p>
+                      Claramente, si alguien del grupo ya ha jugado al juego
+                      podrá explicarles a los demás el funcionamiento.
+                    </p>
+                    <h5 class="noPadding">S1.4 ¿Juntos o separados?</h5>
+                    <p>
+                      En este punto de partida el grupo deberá decidir si ir
+                      juntos o separados. Al ir separados, puede que les
+                      cueste más resolver los retos y puzzles, aunque podrán
+                      terminar el nivel más deprisa. En cambio, si deciden ir
+                      juntos, podrán encontrar más cosas en menos tiempo, o
+                      solucionar los problemas antes. Al fin y al cabo, se
+                      crean unos roles para cada jugador y cada uno de ellos
+                      debe hacer lo que el rol le pide: Uno o dos deberán
+                      vigilar y gestionar el nivel de oscuridad con la
+                      gasolina y los restantes tendrán que solucionar los
+                      puzzles para terminar moviendo la noria.
+                    </p>
+                    <div class="row flexImg">
+                      <div class="col-md-7">
+                        <a href="https://lh7-us.googleusercontent.com/b1XCQjEgB56kpZgBzaMYcz495QA3oA4d2a-KyE_rg_0uyE8MGFvXEN6ERVOB1Xa2f6crbtOa8GHSxt5yoVXx0zv3IYCIw1oBQfygQUBagOGDsj8cPkiwdZsDsjy8n4DJBBRqhEV8fsVHHwbvT6rNEbc"
+                          data-rel="prettyPhoto"><img
+                            src="https://lh7-us.googleusercontent.com/b1XCQjEgB56kpZgBzaMYcz495QA3oA4d2a-KyE_rg_0uyE8MGFvXEN6ERVOB1Xa2f6crbtOa8GHSxt5yoVXx0zv3IYCIw1oBQfygQUBagOGDsj8cPkiwdZsDsjy8n4DJBBRqhEV8fsVHHwbvT6rNEbc"
+                            alt="" class="img-responsive img-thumbnail" /></a>
+                      </div>
+                    </div>
+                    <hr />
+                  </div>
+
+                  <h4 id="line5_2">S2. Zona restauración</h4>
+                  <p>
+                    Uno o varios jugadores se dirigen hacia la zona norte,
+                    donde hay varias máquinas recreativas y puestos de comida.
+                    Allí encontrarán el manojo de llaves necesario para
+                    avanzar
+                  </p>
+                  <div class="col-md-12 left-align marginLeft">
+                    <h5 class="noPadding">
+                      S2.1 Enchufar máquina gancho + susto
+                    </h5>
+                    <p>
+                      Al llegar a la zona de restauración observarán que la
+                      batería se encuentra dentro de una máquina de gancho,
+                      típica de sitios recreativos. Sin embargo, deberán
+                      investigar el porqué no funciona, siendo la sencilla y
+                      obvia respuesta a este misterio el conectar el cable de
+                      alimentación de justo detrás la máquina. Sin embargo, no
+                      cargará de golpe, sino que es que cuando el jugador se
+                      aleje un poco tras enchufar la máquina hará un fuerte
+                      ruido para asustarle.
+                    </p>
+                    <h5 class="noPadding">S2.2 Enganchar objeto</h5>
+                    <p>
+                      Una vez la máquina funcione, los jugadores podrán
+                      interactuar con esta para entrar a una suerte de
+                      minijuego en el que se usará la profundidad para que
+                      calculen cuándo tirar el gancho hacia abajo. Si fallan
+                      deberán desenchufar y volver a enchufar la máquina, ya
+                      que no llevan monedas consigo mismo.
+                    </p>
+                    <h5 class="noPadding">S2.3 Bien escondida</h5>
+                    <p>
+                      La zona de restauración es bastante grande y se puede
+                      pasar por muchos sitios, entre ellos un parque. Dentro o
+                      detrás de una de las casetas donde se vendería comida en
+                      su momento se encuentra un garrafón de gasolina, que
+                      deberemos
+                    </p>
+                    <div class="row flexImg">
+                      <div class="col-md-9">
+                        <a href="https://lh7-us.googleusercontent.com/PVXNOAxqStOjjXG-CU8mVyRqTj-4RTypATYuR8CihnS2uzLoRLUg6OkTJsb0SLOQYUX9djbHEGVmAxlAvnmE6r0w8Qttb25ErflYuFwbm5qe6NH6YCja2XCuJwy1OrJxWyRlE2HAyoPl2SLaLIeAJpM"
+                          data-rel="prettyPhoto"><img
+                            src="https://lh7-us.googleusercontent.com/PVXNOAxqStOjjXG-CU8mVyRqTj-4RTypATYuR8CihnS2uzLoRLUg6OkTJsb0SLOQYUX9djbHEGVmAxlAvnmE6r0w8Qttb25ErflYuFwbm5qe6NH6YCja2XCuJwy1OrJxWyRlE2HAyoPl2SLaLIeAJpM"
+                            alt="" class="img-responsive img-thumbnail" /></a>
+                      </div>
+                    </div>
+                    <hr />
+                  </div>
+
+                  <h4 id="line5_3">S3. Zona Pulpo/Ranas</h4>
+                  <p>
+                    Uno o varios jugadores se dirigen hacia la de abajo, donde
+                    hay una máquina giratoria enorme de vagones temáticos.
+                    Tendrá cuatro accesos, uno por cada punto cardinal. Allí
+                    encontrarán la palanca necesaria para avanzar.
+                  </p>
+                  <div class="col-md-12 left-align marginLeft">
+                    <h5 class="noPadding">S3.1 On/Off</h5>
+                    <p>
+                      Desde un interruptor se puede activar y desactivar la
+                      máquina de la rana. Lo que debe buscar el jugador es
+                      posicionarla de tal manera en la que se pueda acceder,
+                      ya sea por arriba o por abajo. Si es que llegan a esta
+                      zona, dos jugadores se puede resolver muy fácilmente, al
+                      posicionarse uno sobre el vagón y el otro accionando el
+                      interruptor. El botón no se podrá usar si se detecta que
+                      hay alguien abajo.
+                    </p>
+                    <h5 class="noPadding">S3.2 Sobre vagones</h5>
+                    <p>
+                      En el caso de que se coloquen bien los vagones de la
+                      atracción, se podrá ir saltando de uno a otro para
+                      llegar a la rana, que tiene la palanca incrustada en el
+                      ojo.
+                    </p>
+                    <h5 class="noPadding">S3.3 Debajo de todo</h5>
+                    <p>
+                      Como alternativa, se podrá ir por debajo si se para la
+                      máquina en otro momento. Conseguiremos una gasolina de
+                      esta forma.
+                    </p>
+                    <div class="row flexImg">
+                      <div class="col-md-9">
+                        <a href="https://lh7-us.googleusercontent.com/jIJB-q-Lw3leD1VEZZHXRKQNa1VniAJkRWkwqMaci7acBv7vEz8EfkNffEwqvPzUBRPBud258MxdQOcXVIE3SFjoad0CBR1nGeD8tTX7N-oTWXlFuNmdSyeYcQr2Dymt6bA1fPNEWV3M-119P0he2k8"
+                          data-rel="prettyPhoto"><img
+                            src="https://lh7-us.googleusercontent.com/jIJB-q-Lw3leD1VEZZHXRKQNa1VniAJkRWkwqMaci7acBv7vEz8EfkNffEwqvPzUBRPBud258MxdQOcXVIE3SFjoad0CBR1nGeD8tTX7N-oTWXlFuNmdSyeYcQr2Dymt6bA1fPNEWV3M-119P0he2k8"
+                            alt="" class="img-responsive img-thumbnail" /></a>
+                      </div>
+                    </div>
+                    <hr />
+                  </div>
+
+                  <h4 id="line5_4">S4. Zona Tiovivo</h4>
+                  <p>
+                    Uno o varios jugadores se dirigen hacia la zona central,
+                    donde hay un tiovivo. Allí encontrarán el cable necesario
+                    para avanzar.
+                  </p>
+                  <div class="col-md-12 left-align marginLeft">
+                    <h5 class="noPadding">S4.1 Atascado</h5>
+                    <p>
+                      El tiovivo estará atascado con un número específico de
+                      elementos interactuables que se podrían ser tablones de
+                      madera, vallas caídas u otro montón de cosas. Los
+                      jugadores deberán ir quitando estos obstáculos para que
+                      el tiovivo pueda funcionar.
+                    </p>
+                    <h5 class="noPadding">
+                      S4.2 Caballos de colores / Manual / Números
+                    </h5>
+                    <p>
+                      Una vez pueda funcionar el tiovivo lo podremos
+                      controlar.
+                    </p>
+                    <div class="padding">
+                      <p>
+                        <b>Idea 1 🠖 </b>
+                        Hay un patrón en el pivote del mismo tiovivo. En el
+                        patrón se ven caballos de colores en ciertas
+                        posiciones. El jugador deberá plasmar lo que ve en la
+                        textura en los caballos 3D, subiéndolos y bajándolos
+                        mediante un panel de control con diferentes botones,
+                        cada uno del color que moverá los caballos de ese
+                        color. Al hacer coincidir los caballos “reales” con
+                        los de la imagen, un caballo blanco bajará su posición
+                        para que se pueda tomar el cable que se encuentra
+                        enrollado alrededor de su cuello.
+                      </p>
+                      <p>
+                        <b>Idea 2 🠖 </b>
+                        El jugador o jugadores deberán moverse alrededor de la
+                        zona para encontrar una nota. En la nota se describe
+                        una secuencia la cual repetir en un panel de
+                        controles.
+                      </p>
+                      <p><b>Idea 3 🠖 </b>Hacer un puzzle de números.</p>
+                    </div>
+                    <h5 class="noPadding">S4.3 Extraviado</h5>
+                    <p>
+                      En las zonas circundantes, entre arbustos o clutter, se
+                      encuentra un garrafón de gasolina.
+                    </p>
+                    <hr />
+                  </div>
+                  <h4 id="line5_5">S5. Interzona de arriba</h4>
+                  <p>
+                    Parque que conecta la atracción de la rana con los puestos
+                    de restauración, ideal para relajarse.
+                  </p>
+                  <div class="col-md-12 left-align marginLeft">
+                    <h5 class="noPadding">S5.1 Bancos</h5>
+                    <p>
+                      Bajo, encima o al lado de un banco hay un garrafón de
+                      gasolina.
+                    </p>
+                    <div class="row flexImg">
+                      <div class="col-md-5">
+                        <a href="https://lh7-us.googleusercontent.com/RQ9FKX0DlvtXtdfYdgGHqGswCugjb9XuZzliYofGkW50eCz61G36hyvpp3N8iKVaswi4j2dsgY5boH-1uUir5IFiZeuO4BtyojJrC67c-9ogd0VYWxLDgMgXuUXJwrRJgJowv3LLywAj4YZU-lUMBXo"
+                          data-rel="prettyPhoto"><img
+                            src="https://lh7-us.googleusercontent.com/RQ9FKX0DlvtXtdfYdgGHqGswCugjb9XuZzliYofGkW50eCz61G36hyvpp3N8iKVaswi4j2dsgY5boH-1uUir5IFiZeuO4BtyojJrC67c-9ogd0VYWxLDgMgXuUXJwrRJgJowv3LLywAj4YZU-lUMBXo"
+                            alt="" class="img-responsive img-thumbnail" /></a>
+                      </div>
+                    </div>
+                    <hr />
+                  </div>
+                  <h4 id="line5_6">S6. Interzona de abajo</h4>
+                  <div class="col-md-12 left-align marginLeft">
+                    <h5 class="noPadding">S6.1 Atajos</h5>
+                    <p>
+                      Hay caminos que te llevan a otros caminos. En medio de
+                      alguno de estos veremos un garrafón de gasolina.
+                    </p>
+                    <div class="row flexImg">
+                      <div class="col-md-3">
+                        <a href="https://lh7-us.googleusercontent.com/QAGtrHxpvHOuRpVscdTME3WVEXww6tj24RIlcluULyC1W9evwVIzcUNY6zWxmViIi2Ks_NAr6ymuJxQFamvDc7zLqu1hrcP8OPtL2tPajavoF79MtQqei4WzKPYeTRqwa1xLxQ38XRUCKth3P0-6LiY"
+                          data-rel="prettyPhoto"><img
+                            src="https://lh7-us.googleusercontent.com/QAGtrHxpvHOuRpVscdTME3WVEXww6tj24RIlcluULyC1W9evwVIzcUNY6zWxmViIi2Ks_NAr6ymuJxQFamvDc7zLqu1hrcP8OPtL2tPajavoF79MtQqei4WzKPYeTRqwa1xLxQ38XRUCKth3P0-6LiY"
+                            alt="" class="img-responsive img-thumbnail" /></a>
+                      </div>
+                    </div>
+                    <hr />
+                  </div>
+                  <h4 id="line5_7">S7. Zona de la noria</h4>
+                  <p>
+                    El pie de la noria, y la misma entrada. Se aprecia un
+                    camino detrás de una cabina, aunque esta bloquea el
+                    camino.
+                  </p>
+                  <div class="col-md-12 left-align marginLeft">
+                    <h5 class="noPadding">S7.1 Usar llave</h5>
+                    <p>
+                      Se requiere del manojo de llaves para abrir la primera
+                      puerta
+                    </p>
+                    <h5 class="noPadding">S7.3 Palanca fuente</h5>
+                    <p>
+                      Una vez dentro, los jugadores deben colocar la palanca
+                      que han encontrado.
+                    </p>
+                    <h5 class="noPadding">S7.4 Enchufar cable</h5>
+                    <p>Después, conectar un cable.</p>
+                    <h5 class="noPadding">S7.5 Encontrar batería</h5>
+                    <p>
+                      Hay una batería de repuesto en la caseta del encargado.
+                    </p>
+                    <h5 class="noPadding">S7.6 Colocar batería</h5>
+                    <p>Para terminar, deberán conectar una batería.</p>
+                    <h5 class="noPadding">
+                      S7.7 Accionar palanca y giro noria
+                    </h5>
+                    <p>
+                      Al terminar todo esto, la noria empezará a girar al
+                      accionar la palanca, revelando un camino hacia la Fase
+                      2. Deberán detener la noria cuando no haya ninguna
+                      cabina bloqueando el paso.
+                    </p>
+                    <div class="row flexImg">
+                      <div class="col-md-9">
+                        <a href="https://lh7-us.googleusercontent.com/oGh5IGtLnqQlVUDrwPMlSuhW0fcy5D4GToTvafmJHX7Hj6dmE_Mvemo1Z5VuLxfkakO064jh3VW0r5BB8fry8diczn5P1lpO5Wiu0S6WVmqhAfCtIB70SoXWkdIM4MWwKmDBOZN4iuF7n3CRgCxWa90"
+                          data-rel="prettyPhoto"><img
+                            src="https://lh7-us.googleusercontent.com/oGh5IGtLnqQlVUDrwPMlSuhW0fcy5D4GToTvafmJHX7Hj6dmE_Mvemo1Z5VuLxfkakO064jh3VW0r5BB8fry8diczn5P1lpO5Wiu0S6WVmqhAfCtIB70SoXWkdIM4MWwKmDBOZN4iuF7n3CRgCxWa90"
+                            alt="" class="img-responsive img-thumbnail" /></a>
+                      </div>
+                    </div>
+                    <hr />
+                  </div>
+                </div>
+              </div>
+              <!-- end col -->
+            </div>
+            <div class="row"></div>
+            <!-- end row -->
+
+            <!-- end row -->
+          </section>
+          <!-- end section -->
+
+          <section id="line6" class="section">
+            <div class="row">
+              <div class="col-md-12 left-align">
+                <h2 class="dark-text">
+                  Elementos de diseño
+                  <hr />
+                </h2>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line6_1">Explicación</h4>
+                <p>
+                  Can You See The Darkness es un juego multijugador
+                  cooperativo que dispondrá de tres niveles de dificultad al
+                  crear la sala: Fácil, Normal y Difícil. Cada uno de estos
+                  niveles sigue un conjunto de normas y maneja una curva de
+                  dificultad distinta.
+                  <br />
+                  Por lo general, las variaciones de cada nivel responderán a
+                  cambios en la cantidad de gasolina que los jugadores podrán
+                  encontrar, la velocidad a la que la oscuridad se va haciendo
+                  presente y caminos que se cortan de partida a partida.
+                </p>
+                <p>
+                  A continuación se mencionan los aspectos específicos de cada
+                  nivel de dificultad con su respectiva curva de “flow”:
+                </p>
+                <div class="marginLeft">
+                  <p>
+                    <b>- Fácil 🠖 </b>En el nivel fácil no hay ningún obstáculo
+                    que dificulte el avance de los jugadores y la oscuridad
+                    avanza a un ritmo lento. Además aparecerán siete gasolinas
+                    esparcidas por el mapa.
+                  </p>
+                  <p>
+                    <b>- Normal 🠖 </b>Si pensamos en una “run” estándar, esta
+                    sería la ideal. Se bloquean dos caminos aleatorios y
+                    aparecen cinco gasolinas en todo el primer nivel. La
+                    oscuridad avanzará a un ritmo amenazante aunque no
+                    abusivo, lo que forzará a los jugadores a utilizar
+                    tácticas básicas de gestión de recursos y posicionamiento.
+                  </p>
+                  <p>
+                    <b>- Difícil 🠖 </b>Ahora bien, para que aún haya un reto
+                    para jugadores experimentados existe el nivel Difícil,
+                    donde ahora sí cada jugador debe de tener muy claro su
+                    trabajo desde el principio para llevarlo a cabo lo más
+                    rápido posible. Con tan solo 4 gasolinas alrededor del
+                    mapa, tres caminos bloqueados aleatoriamente y una
+                    duración de la luz bastante corta, un jugador en
+                    específico deberá dedicarse a llenar el generador
+                    constantemente mientras los otros resuelven los acertijos.
+                    Si se hace una buena gestión se debería poder pasar por la
+                    noria gastando tan sólo 1 o 2 gasolinas.
+                  </p>
+                  <p>
+                    <b>- Infierno (?) 🠖 </b>Para aquellos que logren terminar
+                    el modo Difícil desbloquearán la dificultad Infierno. Esta
+                    dificultad ya es abismal, y a parte de estrategias como
+                    repartición de roles se deberá jugar con los tiempos de
+                    aquellos que van a buscar las gasolinas y turnarse con
+                    rotaciones. Por ejemplo, dos personas necesitarán ir a por
+                    gasolinas a la vez ya que si no el tiempo se acabaría, por
+                    lo que deben intercalar los usos y aprovechar que otro se
+                    va a hacer un puzzle para ocupar el sitio vacío.
+                  </p>
+                </div>
 
                 <div class="row flexImg">
-                  <div class="col-md-5">
-                    <a href="images/PJs/Cameron.png" data-rel="prettyPhoto"
-                      ><img
-                        src="images/PJs/Cameron.png"
-                        alt=""
-                        class="img-responsive img-thumbnail"
-                    /></a>
+                  <div class="col-md-9">
+                    <a href="https://lh7-us.googleusercontent.com/I1Bed7P5KmxtOS4mMJgtGwkJfPtAfTDuP7uqyOO3K8_NXUYKHJT-OCaLxIviaQQr3uvpDepzMS69W7FmzU9H7zPtr8gipx-_Aed1Q9u_-KBXI254wmKeNnnL5wYUwu3_OMu5qHp70-KBhkRn0C0i5mU"
+                      data-rel="prettyPhoto"><img
+                        src="https://lh7-us.googleusercontent.com/I1Bed7P5KmxtOS4mMJgtGwkJfPtAfTDuP7uqyOO3K8_NXUYKHJT-OCaLxIviaQQr3uvpDepzMS69W7FmzU9H7zPtr8gipx-_Aed1Q9u_-KBXI254wmKeNnnL5wYUwu3_OMu5qHp70-KBhkRn0C0i5mU"
+                        alt="" class="img-responsive img-thumbnail" /></a>
                   </div>
-
-                  <div class="col-md-7">
-                    <div class="noSpace">
-                      <h4>Cameron Gallagher “Cam”</h4>
-                      <p><b>MBTI: </b>Aventurero 🠖 ISFP-A / ISFP-T</p>
-                      <p><b>Edad: </b>20</p>
-                    </div>
-                    <p>
-                      Desordenado y bromista, aunque centrado en los momentos
-                      importantes, ha tenido una vida complicada, tuvo que
-                      repetir curso y ahí conoció a Jackson, quien le ayudó
-                      junto a su pasión por el básquet lo han ayudado en los
-                      tiempos difíciles. Le gusta explorar y muchas veces se
-                      mete en líos por ello, por lo que la gente que lo conoce
-                      decide mantenerse en raya. Adora a su hermanastra, aunque
-                      muchas veces tengan sus piques, y se suele juntar con su
-                      grupo porque le llama la atención Park Taeyang.
-                    </p>
-                  </div>
-                  <!-- end col -->
                 </div>
+                <h5 class="noPadding">Explicación del gráfico</h5>
+                <p>
+                  Nada más empezar a jugar lo recomendable es probar el modo
+                  fácil o normal ya que así los jugadores nuevos no llegarán a
+                  frustrarse demasiado mientras aprenden, y tampoco se
+                  aburrirán. Cuando ya llevan un tiempo jugando, entendiendo
+                  el juego y practicando y se empiezan a aburrir del modo
+                  normal tendrán a su disposición el modo difícil, que es un
+                  reto algo mayor al anterior. De la misma forma el nivel
+                  Infierno se podría entregar como recompensa a los jugadores
+                  más leales y habilidosos mediante una expansión gratuita
+                  tiempo después de la salida del juego como un método de
+                  fidelización.
+                </p>
+                <p>
+                  A parte de las dificultades clásicas, vamos a implementar un
+                  modo Accesible en el que no puedas perder, así todo el mundo
+                  podrá disfrutar del juego.
+                </p>
                 <hr />
               </div>
 
-              <div class="col-md-12 cinemática">
-                <h4 id="line2_3">Cinemática intoductoria</h4>
-                <ul>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line6_2">Game Feel</h4>
+                <p>
+                  Se debe trabajar con cautela en el Game Feel de Can You See
+                  The Darkness debido a la misma mecánica de la oscuridad, a
+                  parte de para darle al jugador una sensación de inmersión -
+                  con todo el trabajo que ello implica: Control a tiempo real,
+                  Espacio simulado y el Pulido.
+                  <br />
+                  Estas categorías globales suelen atribuirse a unos roles
+                  específicos: El Control debe ser mejorado por programadores
+                  y diseñadores, el Pulido por artistas y el Espacio lo suele
+                  controlar el motor de desarrollo en cuestión, aunque las
+                  físicas suelen responder a los programadores.
+                </p>
+                <p>
+                  Para hacer un análisis exhaustivo y desarrollar un Game Feel
+                  en profundidad, investigaremos varios aspectos que afectan
+                  al jugador.
+                  <br />
+                  Por lo general, un jugador puede sentirse inmerso en el
+                  juego por varios motivos:
+                </p>
+              </div>
+              <ul class="ULmarginLeft">
+                <li>- La sensación de control</li>
+                <li>- Práctica, ensayo y error</li>
+                <li>- Usar los 5 sentidos</li>
+                <li>- Una extensión de la identidad</li>
+                <li>- Interacción con los elementos físicos del juego</li>
+              </ul>
+              <!-- end col -->
+              <p>
+                Además de que un patrón repetitivo suele romper la inmersión
+                al jugador, por lo que elementos aleatorios evitarían este
+                problema. Otro aspecto a tener en cuenta para el Game Feel es
+                la disonancia ludonarrativa: en nuestro caso donde los
+                jugadores encarnan a adolescentes normales y comunes no se
+                sentiría correcto que hubiera una mecánica de volar o lanzar
+                bolas de fuego por las manos.
+              </p>
+              <p>
+                Los distintos niveles de dificultad también facilitarán una
+                mejor integración de los jugadores al juego. Si un jugador se
+                aburre ya no por repetitividad sino por falta de desafío,
+                tendrá a su disposición varios niveles de dificultad y que de
+                verdad se sienta como un joven encerrado en un parque
+                abandonado en medio de la nada.
+              </p>
+              <p>
+                Una vez dicho esto, vamos a entrar en los puntos antes
+                mencionados para indagar un poco más profundamente cada uno de
+                ellos:
+              </p>
+            </div>
+            <!-- end row -->
+
+            <hr />
+
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line6_3">Sensación de control</h4>
+                <p>
+                  Tenemos que tener en cuenta de que el personaje que el
+                  jugador controla es una extensión de su cuerpo. Debe poder
+                  moverse o actuar de manera adecuada a la kinestesia. Tal y
+                  como un sastre tiene dominio de sus herramientas el jugador
+                  debe poder utilizar todas las mecánicas que se le ofrecen a
+                  su antojo. Por ejemplo, tener una mecánica demasiado
+                  específica podría romper esa sensación de control. En CYSTD
+                  esta sensación de control vendrá especificada en un
+                  movimiento multidireccional a una velocidad realista
+                  respectivamente al entorno físico además del control de la
+                  cámara. El movimiento también incluye el salto y algunas
+                  animaciones situacionales.
+                </p>
+                <p>
+                  Al trasladarse a los distintos puzzles con los que se va a
+                  interactuar entendemos estas características específicas
+                  como distintas entre sí: En la máquina de gancho encarnamos
+                  al susodicho para encontrar la batería; en el carroussel
+                  subiremos y bajaremos los caballos con un botón, y en la
+                  foca activaremos y desactivaremos la máquina para crear un
+                  camino. Las posibilidades variarán para funcionar respecto a
+                  la cosa que controlemos.
+                </p>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+
+            <hr />
+
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line6_4">Práctica, ensayo y error</h4>
+                <p>
+                  Con una base no muy alta de dificultad para jugadores nuevos
+                  no habrá mucho ensayo y error en un principio. Sin embargo,
+                  a medida de que los jugadores suban la dificultad deberán
+                  intentar superar los niveles una y otra vez para lograr
+                  desarrollar una estrategia a través del tiempo. Esta
+                  necesidad de coordinación y práctica hará sentir a los
+                  jugadores que forman parte de un grupo, tal y como pasa con
+                  los personajes jugables. A su misma vez se incentiva la
+                  búsqueda de jugadores competentes con el objetivo de
+                  adentrarse en una aventura de nivel infierno, lo que tal y
+                  como pasa con Cameron trata de invitar a personas a una
+                  peligrosa expedición.
+                </p>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+
+            <hr />
+
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line6_5">5 sentidos</h4>
+                <p>
+                  Mediante un sistema de sonido envolvente procuraremos crear
+                  un ambiente de terror psicológico que junto a la estética
+                  visual del parque abandonado harán que los jugadores se
+                  sientan curiosos aunque asustados de explorar cada rincón.
+                  Se podría barajar de usar la función de vibración si se
+                  juega con un periférico específico como por ejemplo un mando
+                  Dualshock de manera aleatoria para llegar a asustar al
+                  jugador. Obviamente, con su ajuste específico para activar o
+                  desactivar esa funcionalidad, enfocado a jugadores más
+                  experimentados.
+                </p>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+
+            <hr />
+
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line6_6">Extensión de la identidad</h4>
+                <p>
+                  Este término se aplica cuando, por ejemplo, vamos
+                  conduciendo y un chocamos nuestro vehículo con otro. De la
+                  misma forma que estamos reconociendo el control del
+                  automóvil, exclamaríamos “Me ha golpeado el otro conductor!”
+                  en lugar de “Su coche ha chocado contra el mío”. Al otorgar
+                  un sentimiento de posesión al elemento u objeto, el jugador
+                  siente que es el mismo mencionado. Con el sistema de CYSTD,
+                  más de una vez el jugador informaría “He encontrado una
+                  gasolina” o “Me he dado cuenta de que este camino está
+                  bloqueado.” Este término también funcionaría en grupo: “Nos
+                  estamos quedando a oscuras” o “¿Tenemos ya todos los
+                  objetos?” Esta forma de comunicación aumentará la inmersión
+                  mediante la extensión de la identidad.
+                </p>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+
+            <hr />
+
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line6_7">Interacción física dentro del juego</h4>
+                <p>
+                  Ahora mismo la interacción física escasea mucho. La única
+                  disponible se encuentra en la colisión de dos jugadores. A
+                  la larga introduciremos elementos como columpios con físicas
+                  o balancines, entre otros.
+                </p>
+              </div>
+              <!-- end col -->
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line6_8">Accesibilidad</h4>
+                <p>
+                  Para que el juego sea accesible a un mayor porcentaje de
+                  público Can you see the darkness cuenta con:
+                </p>
+                <ul class="marginLeft">
                   <li>
-                    - Plano detalle de suelo y pasan los personajes corriendo
+                    <p>
+                      - Poder modificar la dificultad de la partida, fácil,
+                      normal, difícil y un modo en el cual no haya cordura,
+                      haciendo un gameplay mucho más tranquilo para "<i>personas con dificultad severa para la
+                        manipulación o
+                        fuerza , Visión nula, Dificultad moderada para la
+                        manipulación o fuerza</i>" (ga11y: proyecto Videojuegos Accesibles).
+                    </p>
                   </li>
                   <li>
-                    - Plano general del parque y de las espaldas de los
-                    personajes entrando
+                    <p>
+                      - Los iconos son representativos, es decir, son lo
+                      suficientemente identificativos como para que no haga
+                      falta explicación de estos.
+                    </p>
                   </li>
                   <li>
-                    - Contraplano entero ya dentro del parque y se cierran las
-                    puertas tras difuminar a los personajes
+                    <p>
+                      - Ajustes de audio avanzado, no solo poder regular el
+                      volumen del juego, sino también poder personalizar si el
+                      sonido es mono o estéreo (para perfiles con audición
+                      parcial).
+                    </p>
                   </li>
                   <li>
-                    - POV en primera persona de un personaje que mira de lado a
-                    lado y encuentra la caseta con el generador
+                    <p>
+                      - Avisos visuales a lo largo de la partida como; tiempo
+                      restante, ítems conseguidos, porcentaje de gasolina en
+                      el generador…
+                    </p>
                   </li>
                   <li>
-                    - Cameron agarra una botella de gasolina y la gasta en el
-                    generador
+                    <p>
+                      - Añadir un ajuste para que el porcentaje del generador
+                      sea una información que se vea constante en el “hud” del
+                      jugador y no solo al llenarlo de gasolina.
+                    </p>
                   </li>
-                  <li>- Plano general del parque recuperando la luz</li>
                   <li>
-                    - Tiffany encuentra las libretas clavadas en el muro
-                    informativo
+                    <p>
+                      - Sensibilidad del Ratón/Joystick que se pueda ajustar
+                      para adaptarse a diferentes estilos de juego.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      - Una cinemática introductoria a modo de tutorial para
+                      así contextualizar al jugador y facilitar la
+                      comprensión.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      - Poder personalizar reasignando los controles para su
+                      comodidad, para "<i>personas con dificultad severa para la manipulación o
+                        fuerza , Visión nula, Dificultad moderada para la
+                        manipulación o fuerza </i>"(ga11y: proyecto Videojuegos Accesibles).
+                    </p>
                   </li>
                 </ul>
-                <hr />
               </div>
-              <!-- end row -->
-            </section>
-            <!-- end section -->
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+          </section>
+          <!-- end section -->
 
-            <section id="line3" class="section">
-              <div class="row">
-                <div class="col-md-12 left-align">
-                  <h2 class="dark-text">
-                    Entorno y escenario
-                    <hr />
-                  </h2>
-                </div>
-                <div class="col-md-6">
-                  <h4>Concept Art espacio Zona 1:</h4>
-
-                  <a
-                    href="images/CYSTD_FutureMapConcept.png"
-                    data-rel="prettyPhoto"
-                    ><img
-                      src="images/CYSTD_FutureMapConcept.png"
-                      alt=""
-                      class="img-responsive img-thumbnail"
-                  /></a>
-                </div>
-                <div class="col-md-6">
-                  <h4>Whitebox zona 1:</h4>
-                  <a href="/images/WHITEBOX.png" data-rel="prettyPhoto"
-                    ><img
-                      src="/images/WHITEBOX.png"
-                      alt=""
-                      class="img-responsive img-thumbnail"
-                  /></a>
-                </div>
-                <!-- end col -->
-              </div>
-              <!-- end row -->
-
-              <!-- end row -->
-            </section>
-            <!-- end section -->
-
-            <section id="line4" class="section">
-              <div class="row">
-                <div class="col-md-12 left-align">
-                  <h2 class="dark-text">
-                    Mecánicas
-                    <hr />
-                  </h2>
-                </div>
-                <!-- end col -->
-              </div>
-              <!-- end row -->
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line4_1">Movimiento</h4>
-                  <p>
-                    Con todos los personajes controlables, el jugador es capaz
-                    de usar un movimiento en todas las direcciones. Es la
-                    mecánica base del juego y permite el desplazamiento entre
-                    los diferentes escenarios y fases. Se puede combinar con
-                    otras mecánicas como el Sprint, Agacharse o Saltar para
-                    conseguir resultados varios. Alrededor y por dentro del mapa
-                    se encontrarán obstáculos que detendrán el movimiento, unos
-                    removibles y otros no.
-                  </p>
-                </div>
-                <div class="col-md-12">
-                  <h4 id="line4_2">Sprint</h4>
-                  <p>
-                    Como ampliación de la mecánica del movimiento existe el
-                    Sprint, acción que nos permite movernos a mayor velocidad.
-                    Siempre y cuando el jugador esté en movimiento podemos
-                    pulsar una tecla o botón para esprintar, pero nunca en
-                    viceversa. Esta mecánica consta de un límite de energía que
-                    se llena automáticamente con el tiempo. Dependiendo del
-                    nivel de oscuridad, la velocidad será mayor o menor.
-                  </p>
-                </div>
-                <div class="col-md-12">
-                  <h4 id="line4_3">Agacharse</h4>
-                  <p>
-                    Siendo la contraparte del Sprint, al agacharse disminuimos
-                    nuestra velocidad a cambio de reducir nuestra altura. Esto
-                    permite al jugador acceder a lugares que no serían
-                    accesibles de otra forma, como pueden ser túneles, accesos
-                    derruidos, entre otros. Una vez agachados también
-                    recuperaremos el límite del sprint más rápidamente.
-                  </p>
-                </div>
-                <div class="col-md-12">
-                  <h4 id="line4_4">Saltar</h4>
-                  <p>
-                    A veces el jugador se encontrará con obstáculos o distancias
-                    que no puede sortear ni corriendo ni agachándose. Estos
-                    puntos son diseñados para que el jugador pueda utilizar la
-                    mecánica de saltar. Al saltar nos desplazamos un poco hacia
-                    arriba, conservando el momentum que llevamos con antelación,
-                    lo que significa que si se esprinta el salto recorrerá más
-                    espacio. Saltar también comparte y gasta el límite impuesto
-                    por el Sprint.
-                  </p>
-                </div>
-                <div class="col-md-12">
-                  <h4 id="line4_5">Accionar/Interactuar</h4>
-                  <p>
-                    El jugador es capaz de interactuar con algunos elementos del
-                    entorno, sean botones, palancas o retos. Por nombrar un
-                    ejemplo, la acción de interactuar se daría en caso de que el
-                    jugador tenga que empezar un minijuego de pinball mediante
-                    una máquina situada en el entorno, donde se pueden dar
-                    muchos resultados diferentes. En cambio, Accionar es una
-                    mecánica reservada a elementos de on/off, como botones,
-                    palancas u objetos coleccionables.
-                  </p>
-                </div>
-                <div class="col-md-12">
-                  <h4 id="line4_6">Oscuridad</h4>
-                  <p>
-                    La Oscuridad es la segunda mecánica principal del juego y lo
-                    que nos habilita a la condición de derrota. Si el equipo no
-                    logra alcanzar los objetivos a tiempo perderá la partida.
-                    Todos los jugadores comparten un medidor, sea diegético o
-                    no, en el que poder informarse del punto en el que se
-                    encuentra el equipo. Esta mecánica avanza con el tiempo y el
-                    nivel de dificultad seleccionado cambiará la velocidad en la
-                    que avanza. Además, existe un generador localizado en cada
-                    nivel que permite a los jugadores reiniciar el contador de
-                    la oscuridad. Este generador necesita ser accionado por los
-                    jugadores y (se romperá en los X usos/necesitarán encontrar
-                    cierto objeto consumible para poder accionar).
-                  </p>
-                  <p class="noPadding">
-                    Cada porcentaje de Oscuridad hará sentir al jugador unos
-                    síntomas o efectos distintos. Además de la oscuridad en la
-                    pantalla de los jugadores:
-                  </p>
-                  <ul class="marginR">
-                    <li>- 90% 🠖 Empieza a oscurecerse</li>
-                    <li>- 80% 🠖 Aparece neblina “fría” por el mapa</li>
-                    <li>
-                      - 70% 🠖 Los personajes se notan asustados (respiración más
-                      fuerte)
-                    </li>
-                    <li>- 60% 🠖 Se oyen voces y risas</li>
-                    <li>- 50% 🠖 Se mueven cosas solas</li>
-                    <li>
-                      - 40% 🠖 Efectos post processing (Film grain, Chromatic
-                      Aberration…)
-                    </li>
-                    <li>
-                      - 30% 🠖 Se ven ojos en la oscuridad y los latidos del
-                      jugador.
-                    </li>
-                    <li>- 20% 🠖 Aparecen ilusiones por el mapa</li>
-                    <li>- 10% 🠖 No se puede esprintar</li>
-                    <li>- 0% 🠖 Game Over</li>
-                  </ul>
-                </div>
-                <div class="col-md-12">
-                  <h4 id="line4_7">Inventario/Menú</h4>
-                  <p>
-                    Para tener en cuenta los objetivos y mejorar la
-                    organización, nada más empezar la partida, el equipo se
-                    encontrará con cuatro libretas clavadas en una pared con
-                    unos cuchillos. Estas libretas nos permiten ver qué
-                    deberemos hacer para ganar. También sirve como utensilio
-                    para ver qué objetos hemos cogido, y para consultar las
-                    opciones o salir del juego.
-                  </p>
-                </div>
-              </div>
-              <!-- end row -->
-            </section>
-            <!-- end section -->
-
-            <section id="line5" class="section">
-              <div class="row">
-                <div class="col-md-12 left-align">
-                  <h2 class="dark-text">
-                    Puzzles y desafíos
-                    <hr />
-                  </h2>
-
-                  <h4 id="line5_1">S1. Llegada</h4>
-                  <p class="noPadding">
-                    Los jugadores aparecen en la zona inicial del juego, la
-                    entrada cerca de la caseta del conserje y un poste
-                    informativo
-                  </p>
-                  <div class="row">
-                    <div class="col-md-12 left-align marginLeft">
-                      <h5 class="noPadding">S1.1 Caseta</h5>
-                      <p>
-                        puerta abierta muy cercana a la entrada. Pueden entrar
-                        para investigar un poco la situación y la decoración,
-                        con pistas y mensajes. Habrá una puerta trasera que
-                        llevará a un pequeño patio con vallas altas en el que se
-                        encontrará un generador.
-                      </p>
-                      <h5 class="noPadding">S1.2 Libretas</h5>
-                      <p>
-                        En el poste informativo se encontrará plasmado el mapa
-                        del recinto y cuatro libretas clavadas, cada una con un
-                        cuchillo. Los jugadores son capaces de tomar cada uno su
-                        respectiva libreta para darse cuenta con un mensaje que
-                        con un botón podrán abrirla y ver sus objetivos, notas,
-                        objetos que lleva, etc. Se puede ignorar la libreta para
-                        dificultar el gameplay(?)/No se puede empezar hasta
-                        tomar cada uno su libreta.
-                      </p>
-                      <h5 class="noPadding">S1.3 Generador</h5>
-                      <p>
-                        Detrás de la caseta del conserje se encuentra un
-                        generador que brilla de un color especial. Ya sea porque
-                        los jugadores lo encuentran entrando por la caseta o
-                        dando la vuelta y observándolo a través de las vallas,
-                        se sentirán tentados de entrar a investigar lo que es
-                        eso. Al mirarlo de cerca, verán un mensaje que dice
-                        “Necesito gasolina para accionar el generador” en el
-                        cursor, en lugar del típico “Usa ‘E’ para accionar”, lo
-                        que llevará a los jugadores a volver en un futuro cuando
-                        encuentren un garrafón de gasolina. Transcurrido un
-                        tiempo ya habrán sufrido un poco los efectos de la
-                        oscuridad y habrán encontrado un garrafón, por lo que al
-                        emplearlo en el generador notarán que el nivel de
-                        oscuridad ha disminuido. Claramente, si alguien del
-                        grupo ya ha jugado al juego podrá explicarles a los
-                        demás el funcionamiento.
-                      </p>
-                      <p>
-                        Claramente, si alguien del grupo ya ha jugado al juego
-                        podrá explicarles a los demás el funcionamiento.
-                      </p>
-                      <h5 class="noPadding">S1.4 ¿Juntos o separados?</h5>
-                      <p>
-                        En este punto de partida el grupo deberá decidir si ir
-                        juntos o separados. Al ir separados, puede que les
-                        cueste más resolver los retos y puzzles, aunque podrán
-                        terminar el nivel más deprisa. En cambio, si deciden ir
-                        juntos, podrán encontrar más cosas en menos tiempo, o
-                        solucionar los problemas antes. Al fin y al cabo, se
-                        crean unos roles para cada jugador y cada uno de ellos
-                        debe hacer lo que el rol le pide: Uno o dos deberán
-                        vigilar y gestionar el nivel de oscuridad con la
-                        gasolina y los restantes tendrán que solucionar los
-                        puzzles para terminar moviendo la noria.
-                      </p>
-                      <div class="row flexImg">
-                        <div class="col-md-7">
-                          <a
-                            href="https://lh7-us.googleusercontent.com/b1XCQjEgB56kpZgBzaMYcz495QA3oA4d2a-KyE_rg_0uyE8MGFvXEN6ERVOB1Xa2f6crbtOa8GHSxt5yoVXx0zv3IYCIw1oBQfygQUBagOGDsj8cPkiwdZsDsjy8n4DJBBRqhEV8fsVHHwbvT6rNEbc"
-                            data-rel="prettyPhoto"
-                            ><img
-                              src="https://lh7-us.googleusercontent.com/b1XCQjEgB56kpZgBzaMYcz495QA3oA4d2a-KyE_rg_0uyE8MGFvXEN6ERVOB1Xa2f6crbtOa8GHSxt5yoVXx0zv3IYCIw1oBQfygQUBagOGDsj8cPkiwdZsDsjy8n4DJBBRqhEV8fsVHHwbvT6rNEbc"
-                              alt=""
-                              class="img-responsive img-thumbnail"
-                          /></a>
-                        </div>
-                      </div>
-                      <hr />
-                    </div>
-
-                    <h4 id="line5_2">S2. Zona restauración</h4>
-                    <p>
-                      Uno o varios jugadores se dirigen hacia la zona norte,
-                      donde hay varias máquinas recreativas y puestos de comida.
-                      Allí encontrarán el manojo de llaves necesario para
-                      avanzar
-                    </p>
-                    <div class="col-md-12 left-align marginLeft">
-                      <h5 class="noPadding">
-                        S2.1 Enchufar máquina gancho + susto
-                      </h5>
-                      <p>
-                        Al llegar a la zona de restauración observarán que la
-                        batería se encuentra dentro de una máquina de gancho,
-                        típica de sitios recreativos. Sin embargo, deberán
-                        investigar el porqué no funciona, siendo la sencilla y
-                        obvia respuesta a este misterio el conectar el cable de
-                        alimentación de justo detrás la máquina. Sin embargo, no
-                        cargará de golpe, sino que es que cuando el jugador se
-                        aleje un poco tras enchufar la máquina hará un fuerte
-                        ruido para asustarle.
-                      </p>
-                      <h5 class="noPadding">S2.2 Enganchar objeto</h5>
-                      <p>
-                        Una vez la máquina funcione, los jugadores podrán
-                        interactuar con esta para entrar a una suerte de
-                        minijuego en el que se usará la profundidad para que
-                        calculen cuándo tirar el gancho hacia abajo. Si fallan
-                        deberán desenchufar y volver a enchufar la máquina, ya
-                        que no llevan monedas consigo mismo.
-                      </p>
-                      <h5 class="noPadding">S2.3 Bien escondida</h5>
-                      <p>
-                        La zona de restauración es bastante grande y se puede
-                        pasar por muchos sitios, entre ellos un parque. Dentro o
-                        detrás de una de las casetas donde se vendería comida en
-                        su momento se encuentra un garrafón de gasolina, que
-                        deberemos
-                      </p>
-                      <div class="row flexImg">
-                        <div class="col-md-9">
-                          <a
-                            href="https://lh7-us.googleusercontent.com/PVXNOAxqStOjjXG-CU8mVyRqTj-4RTypATYuR8CihnS2uzLoRLUg6OkTJsb0SLOQYUX9djbHEGVmAxlAvnmE6r0w8Qttb25ErflYuFwbm5qe6NH6YCja2XCuJwy1OrJxWyRlE2HAyoPl2SLaLIeAJpM"
-                            data-rel="prettyPhoto"
-                            ><img
-                              src="https://lh7-us.googleusercontent.com/PVXNOAxqStOjjXG-CU8mVyRqTj-4RTypATYuR8CihnS2uzLoRLUg6OkTJsb0SLOQYUX9djbHEGVmAxlAvnmE6r0w8Qttb25ErflYuFwbm5qe6NH6YCja2XCuJwy1OrJxWyRlE2HAyoPl2SLaLIeAJpM"
-                              alt=""
-                              class="img-responsive img-thumbnail"
-                          /></a>
-                        </div>
-                      </div>
-                      <hr />
-                    </div>
-
-                    <h4 id="line5_3">S3. Zona Pulpo/Ranas</h4>
-                    <p>
-                      Uno o varios jugadores se dirigen hacia la de abajo, donde
-                      hay una máquina giratoria enorme de vagones temáticos.
-                      Tendrá cuatro accesos, uno por cada punto cardinal. Allí
-                      encontrarán la palanca necesaria para avanzar.
-                    </p>
-                    <div class="col-md-12 left-align marginLeft">
-                      <h5 class="noPadding">S3.1 On/Off</h5>
-                      <p>
-                        Desde un interruptor se puede activar y desactivar la
-                        máquina de la rana. Lo que debe buscar el jugador es
-                        posicionarla de tal manera en la que se pueda acceder,
-                        ya sea por arriba o por abajo. Si es que llegan a esta
-                        zona, dos jugadores se puede resolver muy fácilmente, al
-                        posicionarse uno sobre el vagón y el otro accionando el
-                        interruptor. El botón no se podrá usar si se detecta que
-                        hay alguien abajo.
-                      </p>
-                      <h5 class="noPadding">S3.2 Sobre vagones</h5>
-                      <p>
-                        En el caso de que se coloquen bien los vagones de la
-                        atracción, se podrá ir saltando de uno a otro para
-                        llegar a la rana, que tiene la palanca incrustada en el
-                        ojo.
-                      </p>
-                      <h5 class="noPadding">S3.3 Debajo de todo</h5>
-                      <p>
-                        Como alternativa, se podrá ir por debajo si se para la
-                        máquina en otro momento. Conseguiremos una gasolina de
-                        esta forma.
-                      </p>
-                      <div class="row flexImg">
-                        <div class="col-md-9">
-                          <a
-                            href="https://lh7-us.googleusercontent.com/jIJB-q-Lw3leD1VEZZHXRKQNa1VniAJkRWkwqMaci7acBv7vEz8EfkNffEwqvPzUBRPBud258MxdQOcXVIE3SFjoad0CBR1nGeD8tTX7N-oTWXlFuNmdSyeYcQr2Dymt6bA1fPNEWV3M-119P0he2k8"
-                            data-rel="prettyPhoto"
-                            ><img
-                              src="https://lh7-us.googleusercontent.com/jIJB-q-Lw3leD1VEZZHXRKQNa1VniAJkRWkwqMaci7acBv7vEz8EfkNffEwqvPzUBRPBud258MxdQOcXVIE3SFjoad0CBR1nGeD8tTX7N-oTWXlFuNmdSyeYcQr2Dymt6bA1fPNEWV3M-119P0he2k8"
-                              alt=""
-                              class="img-responsive img-thumbnail"
-                          /></a>
-                        </div>
-                      </div>
-                      <hr />
-                    </div>
-
-                    <h4 id="line5_4">S4. Zona Tiovivo</h4>
-                    <p>
-                      Uno o varios jugadores se dirigen hacia la zona central,
-                      donde hay un tiovivo. Allí encontrarán el cable necesario
-                      para avanzar.
-                    </p>
-                    <div class="col-md-12 left-align marginLeft">
-                      <h5 class="noPadding">S4.1 Atascado</h5>
-                      <p>
-                        El tiovivo estará atascado con un número específico de
-                        elementos interactuables que se podrían ser tablones de
-                        madera, vallas caídas u otro montón de cosas. Los
-                        jugadores deberán ir quitando estos obstáculos para que
-                        el tiovivo pueda funcionar.
-                      </p>
-                      <h5 class="noPadding">
-                        S4.2 Caballos de colores / Manual / Números
-                      </h5>
-                      <p>
-                        Una vez pueda funcionar el tiovivo lo podremos
-                        controlar.
-                      </p>
-                      <div class="padding">
-                        <p>
-                          <b>Idea 1 🠖 </b>
-                          Hay un patrón en el pivote del mismo tiovivo. En el
-                          patrón se ven caballos de colores en ciertas
-                          posiciones. El jugador deberá plasmar lo que ve en la
-                          textura en los caballos 3D, subiéndolos y bajándolos
-                          mediante un panel de control con diferentes botones,
-                          cada uno del color que moverá los caballos de ese
-                          color. Al hacer coincidir los caballos “reales” con
-                          los de la imagen, un caballo blanco bajará su posición
-                          para que se pueda tomar el cable que se encuentra
-                          enrollado alrededor de su cuello.
-                        </p>
-                        <p>
-                          <b>Idea 2 🠖 </b>
-                          El jugador o jugadores deberán moverse alrededor de la
-                          zona para encontrar una nota. En la nota se describe
-                          una secuencia la cual repetir en un panel de
-                          controles.
-                        </p>
-                        <p><b>Idea 3 🠖 </b>Hacer un puzzle de números.</p>
-                      </div>
-                      <h5 class="noPadding">S4.3 Extraviado</h5>
-                      <p>
-                        En las zonas circundantes, entre arbustos o clutter, se
-                        encuentra un garrafón de gasolina.
-                      </p>
-                      <hr />
-                    </div>
-                    <h4 id="line5_5">S5. Interzona de arriba</h4>
-                    <p>
-                      Parque que conecta la atracción de la rana con los puestos
-                      de restauración, ideal para relajarse.
-                    </p>
-                    <div class="col-md-12 left-align marginLeft">
-                      <h5 class="noPadding">S5.1 Bancos</h5>
-                      <p>
-                        Bajo, encima o al lado de un banco hay un garrafón de
-                        gasolina.
-                      </p>
-                      <div class="row flexImg">
-                        <div class="col-md-5">
-                          <a
-                            href="https://lh7-us.googleusercontent.com/RQ9FKX0DlvtXtdfYdgGHqGswCugjb9XuZzliYofGkW50eCz61G36hyvpp3N8iKVaswi4j2dsgY5boH-1uUir5IFiZeuO4BtyojJrC67c-9ogd0VYWxLDgMgXuUXJwrRJgJowv3LLywAj4YZU-lUMBXo"
-                            data-rel="prettyPhoto"
-                            ><img
-                              src="https://lh7-us.googleusercontent.com/RQ9FKX0DlvtXtdfYdgGHqGswCugjb9XuZzliYofGkW50eCz61G36hyvpp3N8iKVaswi4j2dsgY5boH-1uUir5IFiZeuO4BtyojJrC67c-9ogd0VYWxLDgMgXuUXJwrRJgJowv3LLywAj4YZU-lUMBXo"
-                              alt=""
-                              class="img-responsive img-thumbnail"
-                          /></a>
-                        </div>
-                      </div>
-                      <hr />
-                    </div>
-                    <h4 id="line5_6">S6. Interzona de abajo</h4>
-                    <div class="col-md-12 left-align marginLeft">
-                      <h5 class="noPadding">S6.1 Atajos</h5>
-                      <p>
-                        Hay caminos que te llevan a otros caminos. En medio de
-                        alguno de estos veremos un garrafón de gasolina.
-                      </p>
-                      <div class="row flexImg">
-                        <div class="col-md-3">
-                          <a
-                            href="https://lh7-us.googleusercontent.com/QAGtrHxpvHOuRpVscdTME3WVEXww6tj24RIlcluULyC1W9evwVIzcUNY6zWxmViIi2Ks_NAr6ymuJxQFamvDc7zLqu1hrcP8OPtL2tPajavoF79MtQqei4WzKPYeTRqwa1xLxQ38XRUCKth3P0-6LiY"
-                            data-rel="prettyPhoto"
-                            ><img
-                              src="https://lh7-us.googleusercontent.com/QAGtrHxpvHOuRpVscdTME3WVEXww6tj24RIlcluULyC1W9evwVIzcUNY6zWxmViIi2Ks_NAr6ymuJxQFamvDc7zLqu1hrcP8OPtL2tPajavoF79MtQqei4WzKPYeTRqwa1xLxQ38XRUCKth3P0-6LiY"
-                              alt=""
-                              class="img-responsive img-thumbnail"
-                          /></a>
-                        </div>
-                      </div>
-                      <hr />
-                    </div>
-                    <h4 id="line5_7">S7. Zona de la noria</h4>
-                    <p>
-                      El pie de la noria, y la misma entrada. Se aprecia un
-                      camino detrás de una cabina, aunque esta bloquea el
-                      camino.
-                    </p>
-                    <div class="col-md-12 left-align marginLeft">
-                      <h5 class="noPadding">S7.1 Usar llave</h5>
-                      <p>
-                        Se requiere del manojo de llaves para abrir la primera
-                        puerta
-                      </p>
-                      <h5 class="noPadding">S7.3 Palanca fuente</h5>
-                      <p>
-                        Una vez dentro, los jugadores deben colocar la palanca
-                        que han encontrado.
-                      </p>
-                      <h5 class="noPadding">S7.4 Enchufar cable</h5>
-                      <p>Después, conectar un cable.</p>
-                      <h5 class="noPadding">S7.5 Encontrar batería</h5>
-                      <p>
-                        Hay una batería de repuesto en la caseta del encargado.
-                      </p>
-                      <h5 class="noPadding">S7.6 Colocar batería</h5>
-                      <p>Para terminar, deberán conectar una batería.</p>
-                      <h5 class="noPadding">
-                        S7.7 Accionar palanca y giro noria
-                      </h5>
-                      <p>
-                        Al terminar todo esto, la noria empezará a girar al
-                        accionar la palanca, revelando un camino hacia la Fase
-                        2. Deberán detener la noria cuando no haya ninguna
-                        cabina bloqueando el paso.
-                      </p>
-                      <div class="row flexImg">
-                        <div class="col-md-9">
-                          <a
-                            href="https://lh7-us.googleusercontent.com/oGh5IGtLnqQlVUDrwPMlSuhW0fcy5D4GToTvafmJHX7Hj6dmE_Mvemo1Z5VuLxfkakO064jh3VW0r5BB8fry8diczn5P1lpO5Wiu0S6WVmqhAfCtIB70SoXWkdIM4MWwKmDBOZN4iuF7n3CRgCxWa90"
-                            data-rel="prettyPhoto"
-                            ><img
-                              src="https://lh7-us.googleusercontent.com/oGh5IGtLnqQlVUDrwPMlSuhW0fcy5D4GToTvafmJHX7Hj6dmE_Mvemo1Z5VuLxfkakO064jh3VW0r5BB8fry8diczn5P1lpO5Wiu0S6WVmqhAfCtIB70SoXWkdIM4MWwKmDBOZN4iuF7n3CRgCxWa90"
-                              alt=""
-                              class="img-responsive img-thumbnail"
-                          /></a>
-                        </div>
-                      </div>
-                      <hr />
-                    </div>
-                  </div>
-                </div>
-                <!-- end col -->
-              </div>
-              <div class="row"></div>
-              <!-- end row -->
-
-              <!-- end row -->
-            </section>
-            <!-- end section -->
-
-            <section id="line6" class="section">
-              <div class="row">
-                <div class="col-md-12 left-align">
-                  <h2 class="dark-text">
-                    Elementos de diseño
-                    <hr />
-                  </h2>
-                </div>
-                <!-- end col -->
-              </div>
-              <!-- end row -->
-
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line6_1">Explicación</h4>
-                  <p>
-                    Can You See The Darkness es un juego multijugador
-                    cooperativo que dispondrá de tres niveles de dificultad al
-                    crear la sala: Fácil, Normal y Difícil. Cada uno de estos
-                    niveles sigue un conjunto de normas y maneja una curva de
-                    dificultad distinta.
-                    <br />
-                    Por lo general, las variaciones de cada nivel responderán a
-                    cambios en la cantidad de gasolina que los jugadores podrán
-                    encontrar, la velocidad a la que la oscuridad se va haciendo
-                    presente y caminos que se cortan de partida a partida.
-                  </p>
-                  <p>
-                    A continuación se mencionan los aspectos específicos de cada
-                    nivel de dificultad con su respectiva curva de “flow”:
-                  </p>
-                  <div class="marginLeft">
-                    <p>
-                      <b>- Fácil 🠖 </b>En el nivel fácil no hay ningún obstáculo
-                      que dificulte el avance de los jugadores y la oscuridad
-                      avanza a un ritmo lento. Además aparecerán siete gasolinas
-                      esparcidas por el mapa.
-                    </p>
-                    <p>
-                      <b>- Normal 🠖 </b>Si pensamos en una “run” estándar, esta
-                      sería la ideal. Se bloquean dos caminos aleatorios y
-                      aparecen cinco gasolinas en todo el primer nivel. La
-                      oscuridad avanzará a un ritmo amenazante aunque no
-                      abusivo, lo que forzará a los jugadores a utilizar
-                      tácticas básicas de gestión de recursos y posicionamiento.
-                    </p>
-                    <p>
-                      <b>- Difícil 🠖 </b>Ahora bien, para que aún haya un reto
-                      para jugadores experimentados existe el nivel Difícil,
-                      donde ahora sí cada jugador debe de tener muy claro su
-                      trabajo desde el principio para llevarlo a cabo lo más
-                      rápido posible. Con tan solo 4 gasolinas alrededor del
-                      mapa, tres caminos bloqueados aleatoriamente y una
-                      duración de la luz bastante corta, un jugador en
-                      específico deberá dedicarse a llenar el generador
-                      constantemente mientras los otros resuelven los acertijos.
-                      Si se hace una buena gestión se debería poder pasar por la
-                      noria gastando tan sólo 1 o 2 gasolinas.
-                    </p>
-                    <p>
-                      <b>- Infierno (?) 🠖 </b>Para aquellos que logren terminar
-                      el modo Difícil desbloquearán la dificultad Infierno. Esta
-                      dificultad ya es abismal, y a parte de estrategias como
-                      repartición de roles se deberá jugar con los tiempos de
-                      aquellos que van a buscar las gasolinas y turnarse con
-                      rotaciones. Por ejemplo, dos personas necesitarán ir a por
-                      gasolinas a la vez ya que si no el tiempo se acabaría, por
-                      lo que deben intercalar los usos y aprovechar que otro se
-                      va a hacer un puzzle para ocupar el sitio vacío.
-                    </p>
-                  </div>
-
-                  <div class="row flexImg">
-                    <div class="col-md-9">
-                      <a
-                        href="https://lh7-us.googleusercontent.com/I1Bed7P5KmxtOS4mMJgtGwkJfPtAfTDuP7uqyOO3K8_NXUYKHJT-OCaLxIviaQQr3uvpDepzMS69W7FmzU9H7zPtr8gipx-_Aed1Q9u_-KBXI254wmKeNnnL5wYUwu3_OMu5qHp70-KBhkRn0C0i5mU"
-                        data-rel="prettyPhoto"
-                        ><img
-                          src="https://lh7-us.googleusercontent.com/I1Bed7P5KmxtOS4mMJgtGwkJfPtAfTDuP7uqyOO3K8_NXUYKHJT-OCaLxIviaQQr3uvpDepzMS69W7FmzU9H7zPtr8gipx-_Aed1Q9u_-KBXI254wmKeNnnL5wYUwu3_OMu5qHp70-KBhkRn0C0i5mU"
-                          alt=""
-                          class="img-responsive img-thumbnail"
-                      /></a>
-                    </div>
-                  </div>
-                  <h5 class="noPadding">Explicación del gráfico</h5>
-                  <p>
-                    Nada más empezar a jugar lo recomendable es probar el modo
-                    fácil o normal ya que así los jugadores nuevos no llegarán a
-                    frustrarse demasiado mientras aprenden, y tampoco se
-                    aburrirán. Cuando ya llevan un tiempo jugando, entendiendo
-                    el juego y practicando y se empiezan a aburrir del modo
-                    normal tendrán a su disposición el modo difícil, que es un
-                    reto algo mayor al anterior. De la misma forma el nivel
-                    Infierno se podría entregar como recompensa a los jugadores
-                    más leales y habilidosos mediante una expansión gratuita
-                    tiempo después de la salida del juego como un método de
-                    fidelización.
-                  </p>
-                  <p>
-                    A parte de las dificultades clásicas, vamos a implementar un
-                    modo Accesible en el que no puedas perder, así todo el mundo
-                    podrá disfrutar del juego.
-                  </p>
+          <section id="line7" class="section">
+            <div class="row">
+              <div class="col-md-12 left-align">
+                <h2 class="dark-text">
+                  Rutas de acción
                   <hr />
-                </div>
-
-                <!-- end col -->
+                </h2>
               </div>
-              <!-- end row -->
+              <!-- end col -->
+            </div>
+            <!-- end row -->
 
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line6_2">Game Feel</h4>
-                  <p>
-                    Se debe trabajar con cautela en el Game Feel de Can You See
-                    The Darkness debido a la misma mecánica de la oscuridad, a
-                    parte de para darle al jugador una sensación de inmersión -
-                    con todo el trabajo que ello implica: Control a tiempo real,
-                    Espacio simulado y el Pulido.
-                    <br />
-                    Estas categorías globales suelen atribuirse a unos roles
-                    específicos: El Control debe ser mejorado por programadores
-                    y diseñadores, el Pulido por artistas y el Espacio lo suele
-                    controlar el motor de desarrollo en cuestión, aunque las
-                    físicas suelen responder a los programadores.
-                  </p>
-                  <p>
-                    Para hacer un análisis exhaustivo y desarrollar un Game Feel
-                    en profundidad, investigaremos varios aspectos que afectan
-                    al jugador.
-                    <br />
-                    Por lo general, un jugador puede sentirse inmerso en el
-                    juego por varios motivos:
-                  </p>
+            <div class="row">
+              <div class="col-md-12">
+                <h4 id="line7_1">Golden Path</h4>
+                <p>
+                  La ruta con jugadores sin experiencia previa y jugando en
+                  dificultad fácil, se recorren el mapa en grupo sin dividirse
+                  por roles, haciendo los puzzles en conjunto y llegando al
+                  objetivo final de encontrar todas las piezas necesarias para
+                  avanzar a la siguiente zona juntos.
+                </p>
+                <div class="row flexImg">
+                  <div class="col-md-7">
+                    <a href="https://lh7-us.googleusercontent.com/FGSBwVqCL4aJZaN5qqZRrnCz8l_rlaTPswXtqz5CA3zC4XOxzqLRZNQjT5yYjEI_NoUF4G7j8Lzh3uhfdXAaEtCOSw8apPtEWuCxEJ1Ox7UjJlf1QvIWQ0vpmRM3-8g74pGhZK3mCcSYLuAcKeT-oQs"
+                      data-rel="prettyPhoto"><img
+                        src="https://lh7-us.googleusercontent.com/FGSBwVqCL4aJZaN5qqZRrnCz8l_rlaTPswXtqz5CA3zC4XOxzqLRZNQjT5yYjEI_NoUF4G7j8Lzh3uhfdXAaEtCOSw8apPtEWuCxEJ1Ox7UjJlf1QvIWQ0vpmRM3-8g74pGhZK3mCcSYLuAcKeT-oQs"
+                        alt="" class="img-responsive img-thumbnail" /></a>
+                  </div>
                 </div>
+                <p>
+                  En cambio, en jugadores con más experiencia y con más
+                  conocimiento de la dinámica del juego, se dividirán para así
+                  avanzar con más facilidad y acabar antes que se acabe el
+                  tiempo.
+                </p>
+                <div class="row flexImg">
+                  <div class="col-md-7">
+                    <a href="https://lh7-us.googleusercontent.com/8PPmvTWyam8ZTpx2-nSjfAEhQS-JLm7loONBSCw9qgjS2U5wxbIiHqc7SmIGm1tWfMUZMZeaiitGxzKjiIlhjVjDGie8GOhhgm0MI6XbdZvyhFAyzGUH0fXUlS0P1QCyozgVUVM2FtS72_FrP5iPpy0"
+                      data-rel="prettyPhoto"><img
+                        src="https://lh7-us.googleusercontent.com/8PPmvTWyam8ZTpx2-nSjfAEhQS-JLm7loONBSCw9qgjS2U5wxbIiHqc7SmIGm1tWfMUZMZeaiitGxzKjiIlhjVjDGie8GOhhgm0MI6XbdZvyhFAyzGUH0fXUlS0P1QCyozgVUVM2FtS72_FrP5iPpy0"
+                        alt="" class="img-responsive img-thumbnail" /></a>
+                  </div>
+                </div>
+
+                <p>
+                  En este “path” por ejemplo, uno de los jugadores pasaría a
+                  encargarse exclusivamente a encontrar bidones de gasolina e
+                  ir a rellenar el generador para conseguir más tiempo antes
+                  que se apaguen las luces. Permitiendo dar más tiempo al
+                  resto de jugadores de la partida para poder acabar los
+                  puzzles y encontrar los objetos claves y finalizar el nivel.
+                </p>
+                <div class="row flexImg">
+                  <div class="col-md-7">
+                    <a href="https://lh7-us.googleusercontent.com/yyufUpaJvhcffNa5oA3HqyjBSbf7KH4gzbevbeCAgx6Q3g3fbvJcDtFtvH5xotG2uDNC9XAIfIok-X1LIlEWFoPAyWGnEZF00GD2EqQMxN5SY3PBJ_vX0y3EioZIQhzDHsi3WEhRGfRe_fOiSxE4fDE"
+                      data-rel="prettyPhoto"><img
+                        src="https://lh7-us.googleusercontent.com/yyufUpaJvhcffNa5oA3HqyjBSbf7KH4gzbevbeCAgx6Q3g3fbvJcDtFtvH5xotG2uDNC9XAIfIok-X1LIlEWFoPAyWGnEZF00GD2EqQMxN5SY3PBJ_vX0y3EioZIQhzDHsi3WEhRGfRe_fOiSxE4fDE"
+                        alt="" class="img-responsive img-thumbnail" /></a>
+                  </div>
+                </div>
+                <p>
+                  La partida entonces se desarrolla por roles, teniendo a un
+                  jugador haciendo las partes del mapa de la derecha, uno
+                  jugando por los puzzles de medio, otro por la izquierda y el
+                  último jugando en torno al generador y buscando bidones de
+                  gasolina.
+                </p>
+                <div class="row flexImg">
+                  <div class="col-md-7">
+                    <a href="https://lh7-us.googleusercontent.com/_KsXN_y14mGvTWzk-5BGizr9exn2Gofwnl8d74Z4zIYgI6018RgKitGz7CS_3GcHBXZJDuM1U0gOTVWRjfH16cyierZu2oANdMpIYD3cEPuCzqSc0wk6V9qT22AgoIJR-a8UpWzbYwkUQxLspo5ov9k"
+                      data-rel="prettyPhoto"><img
+                        src="https://lh7-us.googleusercontent.com/_KsXN_y14mGvTWzk-5BGizr9exn2Gofwnl8d74Z4zIYgI6018RgKitGz7CS_3GcHBXZJDuM1U0gOTVWRjfH16cyierZu2oANdMpIYD3cEPuCzqSc0wk6V9qT22AgoIJR-a8UpWzbYwkUQxLspo5ov9k"
+                        alt="" class="img-responsive img-thumbnail" /></a>
+                  </div>
+                </div>
+                <h4 id="line7_2">Walkthrough</h4>
+                <p>
+                  Una partida en fácil se desarrolla de la siguiente manera;
+                  los jugadores entrarían en sala y a continuación se les
+                  reproduciría la cinemática introductoria, donde se muestra
+                  como entran al famoso Parque de atracciones de su pueblo,
+                  lugar de muchas leyendas fantasmagóricas.
+                </p>
+                <p>
+                  En la cinemática se hace hincapié a la gran Noria que hay en
+                  la otra puta del parque , dando a entender que el objetivo
+                  para poder escapar de aquel lugar en el que han quedado
+                  encerrados es ese, se les mostrará también el generador y
+                  como rellenándolo de gasolina les da unos minutos de luz
+                  para así poder moverse por el mapa, aparte también de
+                  enseñar un mapa de este con 4 libretas clavadas con
+                  cuchillos.
+                </p>
+                <p>
+                  Al acabar la cinemática introductoria empezaría a correr el
+                  tiempo y los jugadores tendrían que recorrer el parque para
+                  así encontrar la forma de poder abrir la Noria y así salir.
+                </p>
+                <p>
+                  Para eso, los jugadores se moverán generalmente en grupo,
+                  encontrándose con diferentes atracciones donde deberán
+                  resolver puzzles, cuando vayan explorando verán muchas
+                  atracciones diferentes, algunas vacías o con bidones de
+                  gasolina escondidos (tren de la bruja, barco pirata y casi
+                  todos los puestos de feria), y otras en funcionamiento donde
+                  deberán buscar bien los objetos claves escondidos en ellas;
+                </p>
                 <ul class="ULmarginLeft">
-                  <li>- La sensación de control</li>
-                  <li>- Práctica, ensayo y error</li>
-                  <li>- Usar los 5 sentidos</li>
-                  <li>- Una extensión de la identidad</li>
-                  <li>- Interacción con los elementos físicos del juego</li>
+                  <li>
+                    <p>
+                      <b>- Atracción de la foca 🠖 </b>En la primera atracción
+                      de la parte “este” del mapa se encontrarán la
+                      <i>palanca</i> clavada en la cabeza de la foca. Para
+                      poder conseguirla, se deberá subir arriba del todo de la
+                      atracción.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <b>- Tiovivo 🠖 </b> Ubicándose en el medio del parque,
+                      en esta clásica atracción, se encuentra el
+                      <i>cable de alimentación</i>, enrollado al cuello de uno
+                      de los caballitos del tiovivo, el jugador deberá
+                      realizar un puzzle para poder llegar a él.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <b>- Puesto de feria con máquina de gancho 🠖 </b>En el
+                      gancho se encuentra la batería, estos puestos están
+                      próximos a la zona de la Noria. Par conseguirla, deberás
+                      usar el gancho de la máquina para así obtenerla e ir por
+                      fin a la parte final del mapa.
+                    </p>
+                  </li>
                 </ul>
-                <!-- end col -->
                 <p>
-                  Además de que un patrón repetitivo suele romper la inmersión
-                  al jugador, por lo que elementos aleatorios evitarían este
-                  problema. Otro aspecto a tener en cuenta para el Game Feel es
-                  la disonancia ludonarrativa: en nuestro caso donde los
-                  jugadores encarnan a adolescentes normales y comunes no se
-                  sentiría correcto que hubiera una mecánica de volar o lanzar
-                  bolas de fuego por las manos.
+                  Una vez todos los jugadores encuentren los objetos claves,
+                  deberán ir a la Noria donde en una mesa de plástico
+                  encontrarán la llave, pieza final para poder salir y así
+                  ganar la partida.
                 </p>
                 <p>
-                  Los distintos niveles de dificultad también facilitarán una
-                  mejor integración de los jugadores al juego. Si un jugador se
-                  aburre ya no por repetitividad sino por falta de desafío,
-                  tendrá a su disposición varios niveles de dificultad y que de
-                  verdad se sienta como un joven encerrado en un parque
-                  abandonado en medio de la nada.
+                  Se tiene que tener en cuenta el tiempo, y que aparte de
+                  avanzar realizando las pruebas se tiene que rellenar el
+                  generador de gasolina para que las luces no se apaguen, ya
+                  que si los “players” están mucho tiempo en la oscuridad, su
+                  sanidad irá bajando.
                 </p>
                 <p>
-                  Una vez dicho esto, vamos a entrar en los puntos antes
-                  mencionados para indagar un poco más profundamente cada uno de
-                  ellos:
+                  <i>“Las atracciones están ordenadas por orden siguiendo la
+                    ruta establecida que harían en grupo en el golden path"</i>
                 </p>
               </div>
-              <!-- end row -->
-
-              <hr />
-
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line6_3">Sensación de control</h4>
-                  <p>
-                    Tenemos que tener en cuenta de que el personaje que el
-                    jugador controla es una extensión de su cuerpo. Debe poder
-                    moverse o actuar de manera adecuada a la kinestesia. Tal y
-                    como un sastre tiene dominio de sus herramientas el jugador
-                    debe poder utilizar todas las mecánicas que se le ofrecen a
-                    su antojo. Por ejemplo, tener una mecánica demasiado
-                    específica podría romper esa sensación de control. En CYSTD
-                    esta sensación de control vendrá especificada en un
-                    movimiento multidireccional a una velocidad realista
-                    respectivamente al entorno físico además del control de la
-                    cámara. El movimiento también incluye el salto y algunas
-                    animaciones situacionales.
-                  </p>
-                  <p>
-                    Al trasladarse a los distintos puzzles con los que se va a
-                    interactuar entendemos estas características específicas
-                    como distintas entre sí: En la máquina de gancho encarnamos
-                    al susodicho para encontrar la batería; en el carroussel
-                    subiremos y bajaremos los caballos con un botón, y en la
-                    foca activaremos y desactivaremos la máquina para crear un
-                    camino. Las posibilidades variarán para funcionar respecto a
-                    la cosa que controlemos.
-                  </p>
-                </div>
-                <!-- end col -->
-              </div>
-              <!-- end row -->
-
-              <hr />
-
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line6_4">Práctica, ensayo y error</h4>
-                  <p>
-                    Con una base no muy alta de dificultad para jugadores nuevos
-                    no habrá mucho ensayo y error en un principio. Sin embargo,
-                    a medida de que los jugadores suban la dificultad deberán
-                    intentar superar los niveles una y otra vez para lograr
-                    desarrollar una estrategia a través del tiempo. Esta
-                    necesidad de coordinación y práctica hará sentir a los
-                    jugadores que forman parte de un grupo, tal y como pasa con
-                    los personajes jugables. A su misma vez se incentiva la
-                    búsqueda de jugadores competentes con el objetivo de
-                    adentrarse en una aventura de nivel infierno, lo que tal y
-                    como pasa con Cameron trata de invitar a personas a una
-                    peligrosa expedición.
-                  </p>
-                </div>
-                <!-- end col -->
-              </div>
-              <!-- end row -->
-
-              <hr />
-
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line6_5">5 sentidos</h4>
-                  <p>
-                    Mediante un sistema de sonido envolvente procuraremos crear
-                    un ambiente de terror psicológico que junto a la estética
-                    visual del parque abandonado harán que los jugadores se
-                    sientan curiosos aunque asustados de explorar cada rincón.
-                    Se podría barajar de usar la función de vibración si se
-                    juega con un periférico específico como por ejemplo un mando
-                    Dualshock de manera aleatoria para llegar a asustar al
-                    jugador. Obviamente, con su ajuste específico para activar o
-                    desactivar esa funcionalidad, enfocado a jugadores más
-                    experimentados.
-                  </p>
-                </div>
-                <!-- end col -->
-              </div>
-              <!-- end row -->
-
-              <hr />
-
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line6_6">Extensión de la identidad</h4>
-                  <p>
-                    Este término se aplica cuando, por ejemplo, vamos
-                    conduciendo y un chocamos nuestro vehículo con otro. De la
-                    misma forma que estamos reconociendo el control del
-                    automóvil, exclamaríamos “Me ha golpeado el otro conductor!”
-                    en lugar de “Su coche ha chocado contra el mío”. Al otorgar
-                    un sentimiento de posesión al elemento u objeto, el jugador
-                    siente que es el mismo mencionado. Con el sistema de CYSTD,
-                    más de una vez el jugador informaría “He encontrado una
-                    gasolina” o “Me he dado cuenta de que este camino está
-                    bloqueado.” Este término también funcionaría en grupo: “Nos
-                    estamos quedando a oscuras” o “¿Tenemos ya todos los
-                    objetos?” Esta forma de comunicación aumentará la inmersión
-                    mediante la extensión de la identidad.
-                  </p>
-                </div>
-                <!-- end col -->
-              </div>
-              <!-- end row -->
-
-              <hr />
-
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line6_7">Interacción física dentro del juego</h4>
-                  <p>
-                    Ahora mismo la interacción física escasea mucho. La única
-                    disponible se encuentra en la colisión de dos jugadores. A
-                    la larga introduciremos elementos como columpios con físicas
-                    o balancines, entre otros.
-                  </p>
-                </div>
-                <!-- end col -->
-              </div>
-              <hr />
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line6_8">Accesibilidad</h4>
-                  <p>
-                    Para que el juego sea accesible a un mayor porcentaje de
-                    público Can you see the darkness cuenta con:
-                  </p>
-                  <ul class="marginLeft">
-                    <li>
-                      <p>
-                        - Poder modificar la dificultad de la partida, fácil,
-                        normal, difícil y un modo en el cual no haya cordura,
-                        haciendo un gameplay mucho más tranquilo para "<i
-                          >personas con dificultad severa para la manipulación o
-                          fuerza , Visión nula, Dificultad moderada para la
-                          manipulación o fuerza</i
-                        >" (ga11y: proyecto Videojuegos Accesibles).
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        - Los iconos son representativos, es decir, son lo
-                        suficientemente identificativos como para que no haga
-                        falta explicación de estos.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        - Ajustes de audio avanzado, no solo poder regular el
-                        volumen del juego, sino también poder personalizar si el
-                        sonido es mono o estéreo (para perfiles con audición
-                        parcial).
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        - Avisos visuales a lo largo de la partida como; tiempo
-                        restante, ítems conseguidos, porcentaje de gasolina en
-                        el generador…
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        - Añadir un ajuste para que el porcentaje del generador
-                        sea una información que se vea constante en el “hud” del
-                        jugador y no solo al llenarlo de gasolina.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        - Sensibilidad del Ratón/Joystick que se pueda ajustar
-                        para adaptarse a diferentes estilos de juego.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        - Una cinemática introductoria a modo de tutorial para
-                        así contextualizar al jugador y facilitar la
-                        comprensión.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        - Poder personalizar reasignando los controles para su
-                        comodidad, para "<i
-                          >personas con dificultad severa para la manipulación o
-                          fuerza , Visión nula, Dificultad moderada para la
-                          manipulación o fuerza </i
-                        >"(ga11y: proyecto Videojuegos Accesibles).
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-                <!-- end col -->
-              </div>
-              <!-- end row -->
-            </section>
-            <!-- end section -->
-
-            <section id="line7" class="section">
-              <div class="row">
-                <div class="col-md-12 left-align">
-                  <h2 class="dark-text">
-                    Rutas de acción
-                    <hr />
-                  </h2>
-                </div>
-                <!-- end col -->
-              </div>
-              <!-- end row -->
-
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 id="line7_1">Golden Path</h4>
-                  <p>
-                    La ruta con jugadores sin experiencia previa y jugando en
-                    dificultad fácil, se recorren el mapa en grupo sin dividirse
-                    por roles, haciendo los puzzles en conjunto y llegando al
-                    objetivo final de encontrar todas las piezas necesarias para
-                    avanzar a la siguiente zona juntos.
-                  </p>
-                  <div class="row flexImg">
-                    <div class="col-md-7">
-                      <a
-                        href="https://lh7-us.googleusercontent.com/FGSBwVqCL4aJZaN5qqZRrnCz8l_rlaTPswXtqz5CA3zC4XOxzqLRZNQjT5yYjEI_NoUF4G7j8Lzh3uhfdXAaEtCOSw8apPtEWuCxEJ1Ox7UjJlf1QvIWQ0vpmRM3-8g74pGhZK3mCcSYLuAcKeT-oQs"
-                        data-rel="prettyPhoto"
-                        ><img
-                          src="https://lh7-us.googleusercontent.com/FGSBwVqCL4aJZaN5qqZRrnCz8l_rlaTPswXtqz5CA3zC4XOxzqLRZNQjT5yYjEI_NoUF4G7j8Lzh3uhfdXAaEtCOSw8apPtEWuCxEJ1Ox7UjJlf1QvIWQ0vpmRM3-8g74pGhZK3mCcSYLuAcKeT-oQs"
-                          alt=""
-                          class="img-responsive img-thumbnail"
-                      /></a>
-                    </div>
-                  </div>
-                  <p>
-                    En cambio, en jugadores con más experiencia y con más
-                    conocimiento de la dinámica del juego, se dividirán para así
-                    avanzar con más facilidad y acabar antes que se acabe el
-                    tiempo.
-                  </p>
-                  <div class="row flexImg">
-                    <div class="col-md-7">
-                      <a
-                        href="https://lh7-us.googleusercontent.com/8PPmvTWyam8ZTpx2-nSjfAEhQS-JLm7loONBSCw9qgjS2U5wxbIiHqc7SmIGm1tWfMUZMZeaiitGxzKjiIlhjVjDGie8GOhhgm0MI6XbdZvyhFAyzGUH0fXUlS0P1QCyozgVUVM2FtS72_FrP5iPpy0"
-                        data-rel="prettyPhoto"
-                        ><img
-                          src="https://lh7-us.googleusercontent.com/8PPmvTWyam8ZTpx2-nSjfAEhQS-JLm7loONBSCw9qgjS2U5wxbIiHqc7SmIGm1tWfMUZMZeaiitGxzKjiIlhjVjDGie8GOhhgm0MI6XbdZvyhFAyzGUH0fXUlS0P1QCyozgVUVM2FtS72_FrP5iPpy0"
-                          alt=""
-                          class="img-responsive img-thumbnail"
-                      /></a>
-                    </div>
-                  </div>
-
-                  <p>
-                    En este “path” por ejemplo, uno de los jugadores pasaría a
-                    encargarse exclusivamente a encontrar bidones de gasolina e
-                    ir a rellenar el generador para conseguir más tiempo antes
-                    que se apaguen las luces. Permitiendo dar más tiempo al
-                    resto de jugadores de la partida para poder acabar los
-                    puzzles y encontrar los objetos claves y finalizar el nivel.
-                  </p>
-                  <div class="row flexImg">
-                    <div class="col-md-7">
-                      <a
-                        href="https://lh7-us.googleusercontent.com/yyufUpaJvhcffNa5oA3HqyjBSbf7KH4gzbevbeCAgx6Q3g3fbvJcDtFtvH5xotG2uDNC9XAIfIok-X1LIlEWFoPAyWGnEZF00GD2EqQMxN5SY3PBJ_vX0y3EioZIQhzDHsi3WEhRGfRe_fOiSxE4fDE"
-                        data-rel="prettyPhoto"
-                        ><img
-                          src="https://lh7-us.googleusercontent.com/yyufUpaJvhcffNa5oA3HqyjBSbf7KH4gzbevbeCAgx6Q3g3fbvJcDtFtvH5xotG2uDNC9XAIfIok-X1LIlEWFoPAyWGnEZF00GD2EqQMxN5SY3PBJ_vX0y3EioZIQhzDHsi3WEhRGfRe_fOiSxE4fDE"
-                          alt=""
-                          class="img-responsive img-thumbnail"
-                      /></a>
-                    </div>
-                  </div>
-                  <p>
-                    La partida entonces se desarrolla por roles, teniendo a un
-                    jugador haciendo las partes del mapa de la derecha, uno
-                    jugando por los puzzles de medio, otro por la izquierda y el
-                    último jugando en torno al generador y buscando bidones de
-                    gasolina.
-                  </p>
-                  <div class="row flexImg">
-                    <div class="col-md-7">
-                      <a
-                        href="https://lh7-us.googleusercontent.com/_KsXN_y14mGvTWzk-5BGizr9exn2Gofwnl8d74Z4zIYgI6018RgKitGz7CS_3GcHBXZJDuM1U0gOTVWRjfH16cyierZu2oANdMpIYD3cEPuCzqSc0wk6V9qT22AgoIJR-a8UpWzbYwkUQxLspo5ov9k"
-                        data-rel="prettyPhoto"
-                        ><img
-                          src="https://lh7-us.googleusercontent.com/_KsXN_y14mGvTWzk-5BGizr9exn2Gofwnl8d74Z4zIYgI6018RgKitGz7CS_3GcHBXZJDuM1U0gOTVWRjfH16cyierZu2oANdMpIYD3cEPuCzqSc0wk6V9qT22AgoIJR-a8UpWzbYwkUQxLspo5ov9k"
-                          alt=""
-                          class="img-responsive img-thumbnail"
-                      /></a>
-                    </div>
-                  </div>
-                  <h4 id="line7_2">Walkthrough</h4>
-                  <p>
-                    Una partida en fácil se desarrolla de la siguiente manera;
-                    los jugadores entrarían en sala y a continuación se les
-                    reproduciría la cinemática introductoria, donde se muestra
-                    como entran al famoso Parque de atracciones de su pueblo,
-                    lugar de muchas leyendas fantasmagóricas.
-                  </p>
-                  <p>
-                    En la cinemática se hace hincapié a la gran Noria que hay en
-                    la otra puta del parque , dando a entender que el objetivo
-                    para poder escapar de aquel lugar en el que han quedado
-                    encerrados es ese, se les mostrará también el generador y
-                    como rellenándolo de gasolina les da unos minutos de luz
-                    para así poder moverse por el mapa, aparte también de
-                    enseñar un mapa de este con 4 libretas clavadas con
-                    cuchillos.
-                  </p>
-                  <p>
-                    Al acabar la cinemática introductoria empezaría a correr el
-                    tiempo y los jugadores tendrían que recorrer el parque para
-                    así encontrar la forma de poder abrir la Noria y así salir.
-                  </p>
-                  <p>
-                    Para eso, los jugadores se moverán generalmente en grupo,
-                    encontrándose con diferentes atracciones donde deberán
-                    resolver puzzles, cuando vayan explorando verán muchas
-                    atracciones diferentes, algunas vacías o con bidones de
-                    gasolina escondidos (tren de la bruja, barco pirata y casi
-                    todos los puestos de feria), y otras en funcionamiento donde
-                    deberán buscar bien los objetos claves escondidos en ellas;
-                  </p>
-                  <ul class="ULmarginLeft">
-                    <li>
-                      <p>
-                        <b>- Atracción de la foca 🠖 </b>En la primera atracción
-                        de la parte “este” del mapa se encontrarán la
-                        <i>palanca</i> clavada en la cabeza de la foca. Para
-                        poder conseguirla, se deberá subir arriba del todo de la
-                        atracción.
-                      </p>
-                    </li>
-
-                    <li>
-                      <p>
-                        <b>- Tiovivo 🠖 </b> Ubicándose en el medio del parque,
-                        en esta clásica atracción, se encuentra el
-                        <i>cable de alimentación</i>, enrollado al cuello de uno
-                        de los caballitos del tiovivo, el jugador deberá
-                        realizar un puzzle para poder llegar a él.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <b>- Puesto de feria con máquina de gancho 🠖 </b>En el
-                        gancho se encuentra la batería, estos puestos están
-                        próximos a la zona de la Noria. Par conseguirla, deberás
-                        usar el gancho de la máquina para así obtenerla e ir por
-                        fin a la parte final del mapa.
-                      </p>
-                    </li>
-                  </ul>
-                  <p>
-                    Una vez todos los jugadores encuentren los objetos claves,
-                    deberán ir a la Noria donde en una mesa de plástico
-                    encontrarán la llave, pieza final para poder salir y así
-                    ganar la partida.
-                  </p>
-                  <p>
-                    Se tiene que tener en cuenta el tiempo, y que aparte de
-                    avanzar realizando las pruebas se tiene que rellenar el
-                    generador de gasolina para que las luces no se apaguen, ya
-                    que si los “players” están mucho tiempo en la oscuridad, su
-                    sanidad irá bajando.
-                  </p>
-                  <p>
-                    <i
-                      >“Las atracciones están ordenadas por orden siguiendo la
-                      ruta establecida que harían en grupo en el golden path"</i
-                    >
-                  </p>
-                </div>
-                <div class="row flexImg">
-                  <div class="col-md-7">
-                    <a
-                      href="images/upload/golden path.png"
-                      data-rel="prettyPhoto"
-                      ><img
-                        src="images/upload/golden path.png"
-                        alt=""
-                        class="img-responsive img-thumbnail"
-                    /></a>
-                  </div>
+              <div class="row flexImg">
+                <div class="col-md-7">
+                  <a href="images/upload/golden path.png" data-rel="prettyPhoto"><img
+                      src="images/upload/golden path.png" alt="" class="img-responsive img-thumbnail" /></a>
                 </div>
               </div>
-              <!-- end row -->
-            </section>
-            <!-- end section -->
+            </div>
+            <!-- end row -->
+          </section>
+          <!-- end section -->
 
-            <section id="line8" class="section">
-              <div class="row">
-                <div class="col-md-12 left-align">
-                  <h2 class="dark-text">
-                    Controles
-                    <hr />
-                  </h2>
-                </div>
-                <!-- end col -->
-              </div>
-              <!-- end row -->
-
-              <div class="row">
-                <div class="col-md-12 ControlTable">
-                  <table>
-                    <tr>
-                      <th>Controles</th>
-                      <th>PC</th>
-                      <th>PSX</th>
-                      <th>XBOX</th>
-                    </tr>
-                    <tr>
-                      <td>Movimiento</td>
-                      <td>W A S D</td>
-                      <td>Left joystick</td>
-                      <td>Left joystick</td>
-                    </tr>
-                    <tr>
-                      <td>Cámara</td>
-                      <td>Mouse axis</td>
-                      <td>Right joystick</td>
-                      <td>Right joystick</td>
-                    </tr>
-                    <tr>
-                      <td>Centrar cámara</td>
-                      <td>MB3 (Scroll button)</td>
-                      <td>R3</td>
-                      <td>Right joystick press</td>
-                    </tr>
-                    <tr>
-                      <td>Sprint</td>
-                      <td>Shift</td>
-                      <td>R2/L3</td>
-                      <td>RT</td>
-                    </tr>
-                    <tr>
-                      <td>Salto</td>
-                      <td>Spacebar</td>
-                      <td>╳</td>
-                      <td>A</td>
-                    </tr>
-                    <tr>
-                      <td>Agacharse</td>
-                      <td>Left Control</td>
-                      <td>◯</td>
-                      <td>B</td>
-                    </tr>
-                    <tr>
-                      <td>Interactuar</td>
-                      <td>E</td>
-                      <td>□</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Pausa / Libreta</td>
-                      <td>Escape / Enter</td>
-                      <td>OPTIONS</td>
-                      <td>Start</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-              <!-- end row -->
-            </section>
-            <!-- end section -->
-
-            <section id="line9" class="section">
-              <div class="row">
-                <div class="col-md-12 left-align">
-                  <h2 class="dark-text">
-                    Monetización y márketing
-                    <hr />
-                  </h2>
-                </div>
-                <!-- end col -->
-              </div>
-              <!-- end row -->
-
-              <div class="row">
-                <div class="col-md-12">
-                  <p>
-                    You can find the version history (changelog.txt) file on
-                    <strong>yourthemename-full.zip</strong> folder or you can
-                    check changelog on theme sale page.
-                  </p>
-                  <p>
-                    Once again, thank you so much for purchasing this theme. As
-                    I said at the beginning, I'd be glad to help you if you have
-                    any questions relating to this theme. No guarantees, but
-                    I'll do my best to assist. If you have a more general
-                    question relating to the themes on ThemeForest, you might
-                    consider visiting the forums and asking your question in the
-                    "Item Discussion" section.
-                  </p>
-
+          <section id="line8" class="section">
+            <div class="row">
+              <div class="col-md-12 left-align">
+                <h2 class="dark-text">
+                  Controles
                   <hr />
+                </h2>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
 
-                  <h4>Changelog</h4>
+            <div class="row">
+              <div class="col-md-12 ControlTable">
+                <table>
+                  <tr>
+                    <th>Controles</th>
+                    <th>PC</th>
+                    <th>PSX</th>
+                    <th>XBOX</th>
+                  </tr>
+                  <tr>
+                    <td>Movimiento</td>
+                    <td>W A S D</td>
+                    <td>Left joystick</td>
+                    <td>Left joystick</td>
+                  </tr>
+                  <tr>
+                    <td>Cámara</td>
+                    <td>Mouse axis</td>
+                    <td>Right joystick</td>
+                    <td>Right joystick</td>
+                  </tr>
+                  <tr>
+                    <td>Centrar cámara</td>
+                    <td>MB3 (Scroll button)</td>
+                    <td>R3</td>
+                    <td>Right joystick press</td>
+                  </tr>
+                  <tr>
+                    <td>Sprint</td>
+                    <td>Shift</td>
+                    <td>R2/L3</td>
+                    <td>RT</td>
+                  </tr>
+                  <tr>
+                    <td>Salto</td>
+                    <td>Spacebar</td>
+                    <td>╳</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>Agacharse</td>
+                    <td>Left Control</td>
+                    <td>◯</td>
+                    <td>B</td>
+                  </tr>
+                  <tr>
+                    <td>Interactuar</td>
+                    <td>E</td>
+                    <td>□</td>
+                    <td>X</td>
+                  </tr>
+                  <tr>
+                    <td>Pausa / Libreta</td>
+                    <td>Escape / Enter</td>
+                    <td>OPTIONS</td>
+                    <td>Start</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!-- end row -->
+          </section>
+          <!-- end section -->
 
-                  <pre class="brush: html">
+          <section id="line9" class="section">
+            <div class="row">
+              <div class="col-md-12 left-align">
+                <h2 class="dark-text">
+                  Monetización y márketing
+                  <hr />
+                </h2>
+              </div>
+              <!-- end col -->
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+              <div class="col-md-12">
+                <p>
+                  You can find the version history (changelog.txt) file on
+                  <strong>yourthemename-full.zip</strong> folder or you can
+                  check changelog on theme sale page.
+                </p>
+                <p>
+                  Once again, thank you so much for purchasing this theme. As
+                  I said at the beginning, I'd be glad to help you if you have
+                  any questions relating to this theme. No guarantees, but
+                  I'll do my best to assist. If you have a more general
+                  question relating to the themes on ThemeForest, you might
+                  consider visiting the forums and asking your question in the
+                  "Item Discussion" section.
+                </p>
+
+                <hr />
+
+                <h4>Changelog</h4>
+
+                <pre class="brush: html">
 
                                         -----------------------------------------------------------------------------------------
                                         Version 3.8.4 - May 7th, 2015
@@ -1840,68 +1727,64 @@
                                         - fixed button styling issue with gravity forms
 
 
-                                      </pre
-                  >
-                </div>
+                                      </pre>
               </div>
-              <!-- end row -->
-            </section>
-            <!-- end section -->
+            </div>
+            <!-- end row -->
+          </section>
+          <!-- end section -->
 
-            <section id="line10" class="section">
-              <div class="row">
-                <div class="col-md-12 left-align">
-                  <h2 class="dark-text">
-                    Biblia de arte
-                    <hr />
-                  </h2>
-                </div>
-                <!-- end col -->
+          <section id="line10" class="section">
+            <div class="row">
+              <div class="col-md-12 left-align">
+                <h2 class="dark-text">
+                  Biblia de arte
+                  <hr />
+                </h2>
               </div>
-              <!-- end row -->
+              <!-- end col -->
+            </div>
+            <!-- end row -->
 
-              <div class="row">
-                <div class="col-md-12">
-                  <p>
-                    Code released under the
-                    <a href="#" target="_blank">Un License</a> License.
-                  </p>
-                  <p>
-                    For more information about copyright and license check
-                    <a
-                      href=" https://choosealicense.com/licenses/unlicense/"
-                      target="_blank"
-                      >choosealicense.com</a
-                    >.
-                  </p>
-                </div>
+            <div class="row">
+              <div class="col-md-12">
+                <p>
+                  Code released under the
+                  <a href="#" target="_blank">Un License</a> License.
+                </p>
+                <p>
+                  For more information about copyright and license check
+                  <a href=" https://choosealicense.com/licenses/unlicense/" target="_blank">choosealicense.com</a>.
+                </p>
               </div>
-              <!-- end row -->
-            </section>
-            <!-- end section -->
-          </div>
-          <!-- // end .col -->
+            </div>
+            <!-- end row -->
+          </section>
+          <!-- end section -->
         </div>
-        <!-- // end .row -->
+        <!-- // end .col -->
       </div>
-      <!-- // end container -->
+      <!-- // end .row -->
     </div>
-    <!-- end wrapper -->
+    <!-- // end container -->
+  </div>
+  <!-- end wrapper -->
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/retina.js"></script>
-    <script src="js/jquery.fitvids.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/retina.js"></script>
+  <script src="js/jquery.fitvids.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/jquery.prettyPhoto.js"></script>
 
-    <!-- CUSTOM PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/main.js"></script>
+  <!-- CUSTOM PLUGINS -->
+  <script src="js/custom.js"></script>
+  <script src="js/main.js"></script>
 
-    <script src="js/syntax-highlighter/scripts/shCore.js"></script>
-    <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
-    <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
-    <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
-  </body>
+  <script src="js/syntax-highlighter/scripts/shCore.js"></script>
+  <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+  <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+  <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+</body>
+
 </html>
